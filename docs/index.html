@@ -1,9 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" content="text/html>
     <title>BiDaR (Big Data Retrival)</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body prefix="schema: http://schema.org">
     <article typeof="schema:ScholarlyArticle" resource="#">
@@ -76,18 +75,105 @@
         <section id="tech">
             <h2>2. Technologies</h2>
             <h3 id="front">Frontend</h3>
-            <h3 id="back">Backend</h3>
+            <blockquote>
+                <p>
+		The website will be develop using the Flask framework on the server side and the Bootstrap framework and Dash library for frontend design.
+		There will be 5 main pages:
+ 		<ol>
+                        <li>Login page</li>
+                        <li>User profile page</li>
+                        <li>Browse page</li>
+			<li>Suggetions page</li>
+                        <li>Admin page</li>
+                </ol>
+		The interaction of user with these pages can be seen in Use Case diagram:
+		<figure typeof="sa:Image1">
+                    <img class="imagine" style="height:auto;" src="../docs/Diagrams/usecase.png">
+                </figure>
+                </p>
+            </blockquote>
+        <h3 id="back">Backend</h3>
+	    <blockquote>
+                <p>
+		We will use Flask, a python micro web framework for backend. For data manipulation the main library will be RDFLib and for SPARQL queries SPARQLWrapper witch is python wrapper around a SPARQL service to remotely execute queries.
+                We will use GraphDB Workbench for managing the BiDaR repository and monitoring queries. GraphDB is a highly efficient and robust graph database with RDF and SPARQL support. The graphs that the application will use will be stored in a repository on a remote GraphDB instance, hosted in Google Cloud. 
+		</p>
+            </blockquote>
         </section>
 
         <section id="architecture">
             <h2>3. Architecture</h2>
             <h3 id="micro">Microservices</h3>
+	    <blockquote>
+                <p>	
+		Our application will have four microservices Request Processor, Data Retriver, Recomandation Service and Authentication Service which are controlled by an Orchestrator.
+		The main flow of our architecture can be seen in the diagram below:
+		<figure typeof="sa:Image1">
+                    <img class="imagine" style="height:auto;" src="../docs/Diagrams/architecture.png">
+                </figure>
+                <b>Request Processor Service</b> this will be the main service that process user actions like updateing profile info, adding or deleting topic of interest and other infomations.<br>
+                <b>Data Retriver Service</b> will handle the requests about data and the sparql endpoints.<br>
+                <b>Recomandation Service</b> will use an algorithm based on interest of user to show different suggestions.<br>
+		<b>Authentication Service</b> this service will be called when an user try to log in or register.
+		</p>
+            </blockquote>
             <h3 id="data">Data retriver</h3>
+  	    <blockquote>
+                <p>	
+		 Data source for our application will be DBpedia and WikiData. We will be retrieved all the data by calling the sparql endpoints exposed by these graphs.
+ 		</p>
+            </blockquote>
+	    <H4 id="linked">Linked data principles</h4>
+		<blockquote>
+                	<p>	
+    		  Linked Data is a set of recommended practices for publishing structured data on the Web. 
+                  Data should first be made available in a standard format that can be reached and processed by Semantic Web tools and in this way the information is easily accessible.
+		  This is achieved by respecting the four principles of Linked Data:
+                    <ol>
+                        <li>Use Uniform Resource Identifiers (URIs) as names for things</li>
+                        <li>Use HTTP URIs so that people can look up those names</li>
+                        <li>Provide information using Semantic Web technologies such as RDF, OWL, SPARQL etc.</li>
+                        <li>Include links to other URIs to make other data discoverable</li>
+                    </ol>
+
+                    <p>BiDaR will use of a few of these principles in the following manners:</p>
+                    <ul>
+                        <li>URIs will be properly used to name the pages which facilitates the search for named data</li>
+                        <li>The data will be modeled using the RDF vocabulary.</li>
+                        <li>Entries on suggetion page will be links that redirect to their sources.</li>
+                    </ul>
+			</p>
+            </blockquote>
             <h3 id="rest">REST API</h3>
-        </section>
+	        <blockquote>
+		<p>
+		The REST API developed for BiDaR will be used by users. This API offers various options like adding new topics of interest, see detalis about user profile, get data about an topic, see sugestions.<br>
+		Our endpoints can be seen in OpenApi file: 
+                </p>
+	        </blockquote>
+	</section>
 
         <section id="biblio">
             <h2>4. Bibliography</h2>
+		  <ol>
+	    <li typeof="schema:WebPage" role="doc-biblioentry" resource="https://www.w3.org/RDF/" property="schema:citation" id="rdf">
+            <cite property="schema:name">
+                <a href="https://www.w3.org/RDF/">RDF (Resource Description Framework)</a>
+            </cite>
+            </li>
+
+            <li typeof="schema:WebPage" role="doc-biblioentry" resource="https://www.w3.org/TR/sparql11-protocol/" property="schema:citation" id="sparql">
+            <cite property="schema:name">
+                <a href="https://www.w3.org/TR/sparql11-protocol/">The SPARQL 1.1 Protocol</a>
+            </cite>
+            </li>
+            
+            <li typeof="schema:WebPage" role="doc-biblioentry" resource="https://graphdb.ontotext.com/" property="schema:citation" id="graphdb">
+            <cite property="schema:name">
+                <a href="https://graphdb.ontotext.com/">GraphDB</a>
+            </cite>
+	   </li>
+            </ol>
         </section>
     </article>
 </body>
