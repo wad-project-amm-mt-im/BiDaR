@@ -92,7 +92,7 @@ layout: default
                 </ol>
 		The interaction of user with these pages can be seen in Use Case diagram:
 		<figure typeof="sa:Image1">
-                    <img class="imagine" style="height:auto;" src="./Diagrams/usecase.png">
+                    <img class="imagine" style="height:auto;" src="./Diagrams/usecase_diagram.png">
                 </figure>
                 </p>
             </blockquote>
@@ -100,7 +100,12 @@ layout: default
 	    <blockquote>
                 <p>
 		We will use Flask, a python micro web framework for backend. For data manipulation the main library will be RDFLib and for SPARQL queries SPARQLWrapper witch is python wrapper around a SPARQL service to remotely execute queries.
-                We will use GraphDB Workbench for managing the BiDaR repository and monitoring queries. GraphDB is a highly efficient and robust graph database with RDF and SPARQL support. The graphs that the application will use will be stored in a repository on a remote GraphDB instance, hosted in Google Cloud. 
+                We will use GraphDB Workbench for managing the BiDaR repository and monitoring queries. GraphDB is a highly efficient and robust graph database with RDF and SPARQL support. <br>
+		Our application will be hosted on AWS in order to make it more responsiveness and to save our local space. 
+		In the below diagram are presented the main classes and methods from the backend part.
+		<figure typeof="sa:Image1">
+                    <img class="imagine" style="height:auto;" src="./Diagrams/uml_diagram.png">
+                </figure>
 		</p>
             </blockquote>
         </section>
@@ -113,12 +118,14 @@ layout: default
 		Our application will have four microservices Request Processor, Data Retriver, Recomandation Service and Authentication Service which are controlled by an Orchestrator.
 		The main flow of our architecture can be seen in the diagram below:
 		<figure typeof="sa:Image1">
-                    <img class="imagine" style="height:auto;" src="./Diagrams/architecture.png">
+                    <img class="imagine" style="height:auto;" src="./Diagrams/architecture_diagram.png">
                 </figure>
-                <b>Request Processor Service</b> this will be the main service that process user actions like updateing profile info, adding or deleting topic of interest and other infomations.<br>
-                <b>Data Retriver Service</b> will handle the requests about data and the sparql endpoints.<br>
-                <b>Recomandation Service</b> will use an algorithm based on interest of user to show different suggestions.<br>
-		<b>Authentication Service</b> this service will be called when an user try to log in or register.
+                <b>Request Processor Service</b> this will be the main service that process user actions like updateing profile info, adding or deleting topic of interest and other infomations.  <br>
+  		Also, this service will process the data received from data retriver service, like summarize, export, vizualize. <br>
+                <b>Data Retriver Service</b>  will construct all sparql queries for each endpoint and will handle the data requested from sparql endpoints.<br>
+                <b>Recomandation Service</b>  will use an algorithm based on interest of user to show different suggestions. Based on user
+topics we will create an sparql query to show data related. <br>
+		<b>Authentication Service</b> this service will be called when an user try to log in or register. We will use an JWT token to ensure user indentity. 
 		</p>
             </blockquote>
             <h3 id="data">Data retriver</h3>
@@ -151,7 +158,7 @@ layout: default
             <h3 id="rest">REST API</h3>
 	        <blockquote>
 		<p>
-		The REST API developed for BiDaR will be used by users. This API offers various options like adding new topics of interest, see detalis about user profile, get data about an topic, see sugestions.<br>
+		The REST API developed for BiDaR will be used by users. This API offers various options like adding or deleting topics of interest, see or modify detalis about user profile, get data about an topic, see sugestions.<br>
 		Our endpoints can be seen in OpenApi file: 
                 </p>
 	        </blockquote>
