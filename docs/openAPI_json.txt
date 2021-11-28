@@ -1,0 +1,448 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "bidar",
+    "description": "This is our OpenAPI doc",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "localhost"
+    }
+  ],
+  "paths": {
+    "/main/register": {
+      "description": "register a user",
+      "post": {
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "user_id": {
+                    "type": "integer",
+                    "example": 7
+                  },
+                  "password": {
+                    "type": "string",
+                    "example": "hashed string"
+                  },
+                  "sex": {
+                    "type": "string",
+                    "example": "male"
+                  },
+                  "birth_date": {
+                    "type": "string",
+                    "example": "03-03-1998"
+                  },
+                  "married": {
+                    "type": "boolean",
+                    "example": true
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Interest added"
+          }
+        }
+      }
+    },
+    "/userprofile/info_update": {
+      "description": "modify user information",
+      "put": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "info_update",
+            "required": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "properties": {
+                  "user_id": {
+                    "type": "string",
+                    "example": 3
+                  },
+                  "sex": {
+                    "type": "object",
+                    "properties": {
+                      "from": {
+                        "type": "string",
+                        "example": "male"
+                      },
+                      "to": {
+                        "type": "string",
+                        "example": "female"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Updated"
+          }
+        }
+      }
+    },
+    "/userprofile/interests/user_id_and_interest": {
+      "description": "POST, DELETE interest for a user",
+      "post": {
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "user_id": {
+                    "type": "integer",
+                    "example": 7
+                  },
+                  "interest_title": {
+                    "type": "string",
+                    "example": "sports"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Interest added"
+          }
+        }
+      },
+      "delete": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "user_id_and_interest",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "user_id": {
+                  "type": "integer",
+                  "example": 8
+                },
+                "interest_title": {
+                  "type": "string",
+                  "example": "sports"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Deletion success"
+          }
+        }
+      }
+    },
+    "/userprofile/interests/{user_id}": {
+      "description": "Get all interests of a user",
+      "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "user_id",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "example": 34
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "interest_domain": {
+                        "type": "string",
+                        "example": "video games"
+                      },
+                      "interest_resource": {
+                        "type": "string",
+                        "example": "World of warcraft was the most popular video game in 2012"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/userprofile/summarize/resource": {
+      "description": "Do a text summarization of the data of a resource with specific NLP techniques",
+      "get": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "resource",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "resource_title": {
+                  "type": "string",
+                  "example": "fruits"
+                },
+                "resource_info": {
+                  "type": "string",
+                  "example": "long text about fruits that has to be summarized"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "resource_title": {
+                      "type": "string",
+                      "example": "fruits"
+                    },
+                    "summarized_resource": {
+                      "type": "string",
+                      "example": "summarized text about fruits"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/userprofile/translate/translation_pair": {
+      "description": "Do a text translation of the data of a resource with specific NLP techniques",
+      "get": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "resource",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "from_lang": {
+                  "type": "string",
+                  "example": "eng"
+                },
+                "to_lang": {
+                  "type": "string",
+                  "example": "ger"
+                },
+                "resource": {
+                  "type": "object",
+                  "properties": {
+                    "resource_title": {
+                      "type": "string",
+                      "example": "fruits"
+                    },
+                    "resource_info": {
+                      "type": "string",
+                      "example": "long text about fruits that has to be translated"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "resource_title": {
+                      "type": "string",
+                      "example": "fruits"
+                    },
+                    "resource_info_translated": {
+                      "type": "string",
+                      "example": "translated text"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/userprofile/{search_topic}": {
+      "description": "Get multiple resources about a certain topic give on a search bar",
+      "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "search_topic",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "football"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "resource_title": {
+                        "type": "string",
+                        "example": "Ronaldo"
+                      },
+                      "resource_info": {
+                        "type": "string",
+                        "example": "Ronaldo is the best player in the world"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/userprofile/recommandations/{user_id}/{interests_titles}": {
+      "description": "Get recommandations according to user interests",
+      "get": {
+        "parameters": [
+          {
+            "in": "path",
+            "name": "user_id",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "in": "path",
+            "name": "interests_titles",
+            "required": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "example": "Computer Science"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "resource_title": {
+                        "type": "string",
+                        "example": "AMD"
+                      },
+                      "resource_info": {
+                        "type": "string",
+                        "example": "AMD is a company that produces high quality processors.."
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/userprofile/recommandations/social_status": {
+      "description": "Get recommandations based on certain attributes of an user",
+      "get": {
+        "parameters": [
+          {
+            "in": "query",
+            "name": "social_status",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "user_id": {
+                  "type": "integer",
+                  "example": 9
+                },
+                "sex": {
+                  "type": "string",
+                  "example": "male"
+                },
+                "married": {
+                  "type": "boolean",
+                  "example": false
+                },
+                "birth_date": {
+                  "type": "string",
+                  "example": "07-07-1990"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "resource_title": {
+                        "type": "string",
+                        "example": "12 rules for life"
+                      },
+                      "resource_info": {
+                        "type": "string",
+                        "example": "12 rules for life is book written by Jordan Peterson..."
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
