@@ -1,0 +1,214 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://visualdataweb.org/newOntology/> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/#> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@base 			<http://visualdataweb.org/newOntology/> .
+
+<http://visualdataweb.org/newOntology/> rdf:type owl:Ontology ;
+                                        dc:title "XMas_OWL"@en;
+                                        dc:description "New ontology description"@en . 
+#################################################################
+
+###  Property Definitions (Number of Property) 10 ###
+#  --------------------------- Property 0------------------------- 
+:hasHobby rdf:type owl:ObjectProperty ;
+          rdfs:label "hasHobby"@en; 
+          rdfs:domain <https://www.wikidata.org/wiki/Q215627>;
+          rdfs:range <https://www.wikidata.org/wiki/Q47728> . 
+#  --------------------------- Property 1------------------------- 
+:livesAt rdf:type owl:ObjectProperty ;
+         rdfs:label "livesAt"@en; 
+         rdfs:domain <https://www.wikidata.org/wiki/Q215627>;
+         rdfs:range <https://www.wikidata.org/wiki/Q2221906> . 
+#  --------------------------- Property 2------------------------- 
+:hasCharacteristic rdf:type owl:ObjectProperty ;
+                   rdfs:label "hasCharacteristic"@en; 
+                   rdfs:domain <https://www.wikidata.org/wiki/Q215627>;
+                   rdfs:range <https://www.wikidata.org/wiki/Q1207505> . 
+#  --------------------------- Property 3------------------------- 
+http://visualdataweb.org/newOntology/http://visualdataweb.org/newOntology/https://www.wikidata.org/wiki/Property:P460 rdf:type owl:ObjectProperty ;
+                                                                                                                      rdfs:label "same as"@en; 
+                                                                                                                      rdfs:domain <https://www.wikidata.org/wiki/Q1207505>;
+                                                                                                                      rdfs:range <https://www.wikidata.org/wiki/Q937228> . 
+#  --------------------------- Property 4------------------------- 
+:wishes rdf:type owl:ObjectProperty ;
+        rdfs:label "wishes"@en; 
+        rdfs:domain <https://www.wikidata.org/wiki/Q215627>;
+        rdfs:range <https://www.wikidata.org/wiki/Q707482> . 
+#  --------------------------- Property 5------------------------- 
+http://visualdataweb.org/newOntology/https://www.wikidata.org/wiki/Property:P1343 rdf:type owl:ObjectProperty ;
+                                                                                  rdfs:label "relatedTo"@en; 
+                                                                                  rdfs:domain <https://www.wikidata.org/wiki/Q707482>;
+                                                                                  rdfs:range <https://www.wikidata.org/wiki/Q47728> . 
+#  --------------------------- Property 6------------------------- 
+http://visualdataweb.org/newOntology/https://www.wikidata.org/wiki/Property:P9660 rdf:type owl:ObjectProperty ;
+                                                                                  rdfs:label "foundIn"@en; 
+                                                                                  rdfs:domain <https://www.wikidata.org/wiki/Q707482>;
+                                                                                  rdfs:range <https://www.wikidata.org/wiki/Q2221906> . 
+#  --------------------------- Property 7------------------------- 
+:hasClimate rdf:type owl:ObjectProperty ;
+            rdfs:label "hasClimate"@en; 
+            rdfs:domain <https://www.wikidata.org/wiki/Q7937>;
+            rdfs:range <https://www.wikidata.org/wiki/Q2221906> . 
+#  --------------------------- Property 8------------------------- 
+:palyType rdf:type owl:ObjectProperty ;
+          rdfs:label "hasPlayType"@en; 
+          rdfs:domain <https://www.wikidata.org/wiki/Q11422>;
+          rdfs:range :PlayType . 
+#  --------------------------- Property 9------------------------- 
+http://visualdataweb.org/newOntology/http://visualdataweb.org/newOntology/https://www.wikidata.org/wiki/Property:P9660 rdf:type owl:ObjectProperty ;
+                                                                                                                       rdfs:label "foundIn"@en; 
+                                                                                                                       rdfs:domain <https://www.wikidata.org/wiki/Q1190554>;
+                                                                                                                       rdfs:range <https://www.wikidata.org/wiki/Q2221906> . 
+###  Class Definitions (Number of Classes) 38 ###
+#  --------------------------- Class  0------------------------- 
+<https://www.wikidata.org/wiki/Q215627> rdf:type owl:Class; 
+                                        rdfs:label "Person"@en . 
+#  --------------------------- Class  1------------------------- 
+<https://www.wikidata.org/wiki/Q7569> rdf:type owl:Class; 
+                                      rdfs:subClassOf <https://www.wikidata.org/wiki/Q215627> ;
+                                      rdfs:label "Chiled"@en . 
+#  --------------------------- Class  2------------------------- 
+<https://www.wikidata.org/wiki/Q47728> rdf:type owl:Class; 
+                                       rdfs:label "hobby"@en . 
+#  --------------------------- Class  3------------------------- 
+<https://www.wikidata.org/wiki/Q2221906> rdf:type owl:Class; 
+                                         rdfs:label "location"@en . 
+#  --------------------------- Class  4------------------------- 
+<https://www.wikidata.org/wiki/Q1207505> rdf:type owl:Class; 
+                                         rdfs:label "Quality "@en . 
+#  --------------------------- Class  5------------------------- 
+<https://www.wikidata.org/wiki/Q48277> rdf:type owl:Class; 
+                                       rdfs:subClassOf <https://www.wikidata.org/wiki/Q1207505> ;
+                                       rdfs:label "Gender"@en . 
+#  --------------------------- Class  6------------------------- 
+<https://www.wikidata.org/wiki/Q185836> rdf:type owl:Class; 
+                                        rdfs:subClassOf <https://www.wikidata.org/wiki/Q1207505> ;
+                                        rdfs:label "Age"@en . 
+#  --------------------------- Class  7------------------------- 
+<https://www.wikidata.org/wiki/Q18189> rdf:type owl:Class; 
+                                       rdfs:subClassOf <https://www.wikidata.org/wiki/Q1207505> ;
+                                       rdfs:label "EducationLevel"@en . 
+#  --------------------------- Class  8------------------------- 
+<https://www.wikidata.org/wiki/Q937228> rdf:type owl:Class; 
+                                        rdfs:label "Proprety"@en . 
+#  --------------------------- Class  9------------------------- 
+<https://www.wikidata.org/wiki/Q187588> rdf:type owl:Class; 
+                                        rdfs:subClassOf <https://www.wikidata.org/wiki/Q1207505> ;
+                                        rdfs:label "SocialClass"@en . 
+#  --------------------------- Class  10------------------------- 
+<https://www.wikidata.org/wiki/Q231002> rdf:type owl:Class; 
+                                        rdfs:subClassOf <https://www.wikidata.org/wiki/Q1207505> ;
+                                        rdfs:label "Nationality"@en . 
+#  --------------------------- Class  11------------------------- 
+<https://www.wikidata.org/wiki/Q349> rdf:type owl:Class; 
+                                     rdfs:subClassOf <https://www.wikidata.org/wiki/Q47728> ;
+                                     rdfs:label "Sports"@en . 
+#  --------------------------- Class  12------------------------- 
+<https://www.wikidata.org/wiki/Q336> rdf:type owl:Class; 
+                                     rdfs:subClassOf <https://www.wikidata.org/wiki/Q47728> ;
+                                     rdfs:label "Science"@en . 
+#  --------------------------- Class  13------------------------- 
+<https://www.wikidata.org/wiki/Q8242> rdf:type owl:Class; 
+                                      rdfs:subClassOf <https://www.wikidata.org/wiki/Q47728> ;
+                                      rdfs:label "Literature"@en . 
+#  --------------------------- Class  14------------------------- 
+<https://www.wikidata.org/wiki/Q638> rdf:type owl:Class; 
+                                     rdfs:subClassOf <https://www.wikidata.org/wiki/Q47728> ;
+                                     rdfs:label "Music"@en . 
+#  --------------------------- Class  15------------------------- 
+<https://www.wikidata.org/wiki/Q735> rdf:type owl:Class; 
+                                     rdfs:subClassOf <https://www.wikidata.org/wiki/Q47728> ;
+                                     rdfs:label "Art"@en . 
+#  --------------------------- Class  16------------------------- 
+<https://www.wikidata.org/wiki/Q161491> rdf:type owl:Class; 
+                                        rdfs:subClassOf <https://www.wikidata.org/wiki/Q47728> ;
+                                        rdfs:label "Reading"@en . 
+#  --------------------------- Class  17------------------------- 
+<https://www.wikidata.org/wiki/Q9584157> rdf:type owl:Class; 
+                                         rdfs:subClassOf <https://www.wikidata.org/wiki/Q215627> ;
+                                         rdfs:label "Adult"@en . 
+#  --------------------------- Class  18------------------------- 
+<https://www.wikidata.org/wiki/Q515> rdf:type owl:Class; 
+                                     rdfs:subClassOf <https://www.wikidata.org/wiki/Q2221906> ;
+                                     rdfs:label "City"@en . 
+#  --------------------------- Class  19------------------------- 
+<https://www.wikidata.org/wiki/Q707482> rdf:type owl:Class; 
+                                        rdfs:label "Gift"@en . 
+#  --------------------------- Class  20------------------------- 
+<https://www.wikidata.org/wiki/Q7590> rdf:type owl:Class; 
+                                      rdfs:subClassOf <https://www.wikidata.org/wiki/Q2221906> ;
+                                      rdfs:label "Transportation"@en . 
+#  --------------------------- Class  21------------------------- 
+<https://www.wikidata.org/wiki/Q7937> rdf:type owl:Class; 
+                                      rdfs:subClassOf :Ecuatorial ;
+                                      rdfs:label "Climate"@en . 
+#  --------------------------- Class  22------------------------- 
+:Ecuatorial rdf:type owl:Class; 
+            rdfs:label "Ecuatorial"@en . 
+#  --------------------------- Class  23------------------------- 
+<https://www.wikidata.org/wiki/Q11422> rdf:type owl:Class; 
+                                       rdfs:subClassOf <https://www.wikidata.org/wiki/Q707482> ;
+                                       rdfs:label "Toy"@en . 
+#  --------------------------- Class  24------------------------- 
+<https://www.wikidata.org/wiki/Q185583> rdf:type owl:Class; 
+                                        rdfs:subClassOf <https://www.wikidata.org/wiki/Q707482> ;
+                                        rdfs:label "Candy"@en . 
+#  --------------------------- Class  25------------------------- 
+:PlayType rdf:type owl:Class; 
+          rdfs:label "PlayType"@en . 
+#  --------------------------- Class  26------------------------- 
+:SinglePlay rdf:type owl:Class; 
+            rdfs:subClassOf :PlayType ;
+            rdfs:label "SinglePlayer"@en . 
+#  --------------------------- Class  27------------------------- 
+:MultiPlayers rdf:type owl:Class; 
+              rdfs:subClassOf :PlayType ;
+              rdfs:label "MultiPlayers"@en . 
+#  --------------------------- Class  28------------------------- 
+<https://www.wikidata.org/wiki/Q1190554> rdf:type owl:Class; 
+                                         rdfs:subClassOf <https://www.wikidata.org/wiki/Q707482> ;
+                                         rdfs:label "Expierience"@en . 
+#  --------------------------- Class  29------------------------- 
+<https://www.wikidata.org/wiki/Q116213> rdf:type owl:Class; 
+                                        rdfs:subClassOf <https://www.wikidata.org/wiki/Q1190554> ;
+                                        rdfs:label "Vacation"@en . 
+#  --------------------------- Class  30------------------------- 
+<https://www.wikidata.org/wiki/Q1656682> rdf:type owl:Class; 
+                                         rdfs:subClassOf <https://www.wikidata.org/wiki/Q1190554> ;
+                                         rdfs:label "Event"@en . 
+#  --------------------------- Class  31------------------------- 
+<https://www.wikidata.org/wiki/Q135712> rdf:type owl:Class; 
+                                        rdfs:subClassOf <https://www.wikidata.org/wiki/Q7937> ;
+                                        rdfs:label "Tropical"@en . 
+#  --------------------------- Class  32------------------------- 
+:Subtropical rdf:type owl:Class; 
+             rdfs:subClassOf <https://www.wikidata.org/wiki/Q7937> ;
+             rdfs:label "Subtropical"@en . 
+#  --------------------------- Class  33------------------------- 
+<https://www.wikidata.org/wiki/Q1420> rdf:type owl:Class; 
+                                      rdfs:subClassOf <https://www.wikidata.org/wiki/Q7590> ;
+                                      rdfs:label "Motorcar"@en . 
+#  --------------------------- Class  34------------------------- 
+<https://www.wikidata.org/wiki/Q870> rdf:type owl:Class; 
+                                     rdfs:subClassOf <https://www.wikidata.org/wiki/Q7590> ;
+                                     rdfs:label "Train"@en . 
+#  --------------------------- Class  35------------------------- 
+<https://www.wikidata.org/wiki/Q197> rdf:type owl:Class; 
+                                     rdfs:subClassOf <https://www.wikidata.org/wiki/Q7590> ;
+                                     rdfs:label "Plain"@en . 
+#  --------------------------- Class  36------------------------- 
+:reindeersleight rdf:type owl:Class; 
+                 rdfs:subClassOf <https://www.wikidata.org/wiki/Q7590> ;
+                 rdfs:label "ReindeerSleight"@en . 
+#  --------------------------- Class  37------------------------- 
+:Continental rdf:type owl:Class; 
+             rdfs:subClassOf <https://www.wikidata.org/wiki/Q7937> ;
+             rdfs:label "Continental"@en . 

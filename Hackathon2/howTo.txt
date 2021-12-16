@@ -1,0 +1,5 @@
+1. Go to webvowl_1.1.7
+2. open `index.html`
+3. Select: Ontology -> SelectOntology file
+4. select `TBox_XMasOWL.json`
+5. click upload
