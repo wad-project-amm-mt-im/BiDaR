@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='profile.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="vh-100 bg-dark">
+    <div class="mask d-flex align-items-center h-100">
+        <div class="container h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body p-5">
+                            <h3 class="text-uppercase text-center mb-3">Account Info</h3>
+                            <div>
+                                {% with messages = get_flashed_messages() %}
+                                {% if messages %}
+                                <div class="notification alert-danger">
+                                    {{ messages[0] }}
+                                </div>
+                                {% endif %}
+                                {% endwith %}
+                                <form method='POST' action="/profile_update">
+                                    <div class="form-group">
+                                        <label for="input1">Email</label>
+                                        <input type="text" class="form-control form-control-lg" id="input1" name="email" value={{email}}>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input2">Name</label>
+                                        <input type="text" class="form-control form-control-lg" id="input2" name="name" value={{name}}>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6">
+                                            <label for="input3">New password</label>
+                                            <input type="password" class="form-control form-control-lg" name="password" placeholder="New Password" id="input3">
+                                        </div>
+                                        <div class="form-group col-6">
+                                            <label for="input4">State</label>
+                                            <input type="text" class="form-control form-control-lg" id="input4" name="state" value={{state}}>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-6">
+                                            <label for="input5">Gender</label>
+                                            <select class="form-control form-control-lg" id="input5" name="gender">
+                                                <option selected value={{gender}}>{{gender}}</option>
+                                                {% if gender == "Female" %}
+                                                <option value="Male">Male</option>
+                                                {% else %}
+                                                <option value="Female">Female</option>
+                                                {% endif %}
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-6">
+                                            <label for="input6">Birthday</label>
+                                            <input type="text" class="form-control form-control-lg" id="input6" name="date" value={{birthday}}>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" name="update" class="btn btn-success btn-block btn-lg btn-dark">Update</button>
+                                    </div>
+                                </form>
+
+                                <form method="POST" action="/profile_add_interest">
+                                    <div class="form-group align-items-center">
+                                        <div>
+                                            <label>Add new interest</label>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <select class="custom-select" name="interest">
+                                                    <option value="Sport">Sport</option>
+                                                    <option value="Music">Music</option>
+                                                    <option value="Art">Art</option>
+                                                    <option value="Dance">Dance</option>
+                                                    <option value="Science">Science</option>
+                                                    <option value="Programming">Programming</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-4">
+                                                <button type="submit" name="add_button" class="btn  btn-success btn-block btn-dark">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <form method="POST" action="/profile_remove_interest">
+                                    <div class="form-group align-items-center">
+                                        <div>
+                                            <label>Your interests:</label>
+                                        </div>
+                                        <div>
+                                            {% if interests_value == [] %}
+                                            <span class="form-control-lg"> No interests added!</span>
+                                            {% else %}
+                                            {% for i in interests_value: %}
+                                            <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Click to delete">
+                                                <button type="submit" class="badge badge-primary even-larger-badge"  name="interest_to_delete" value={{i}}>{{i}}</button>
+                                            </span>
+                                            {%endfor%}
+                                            {%endif%}
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
