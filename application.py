@@ -1,8 +1,4 @@
-from flask import Flask
+from setup import myapp
 
-application = Flask(__name__)
-
-
-@application.route("/")
-def hello_world():
-	return "Hello World!"
+application= myapp
+application.run()
