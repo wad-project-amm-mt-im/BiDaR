@@ -1,7 +1,6 @@
-from email.mime import application
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
+from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
@@ -19,6 +18,7 @@ def create_app():
     login_manager.init_app(application)
 
     from models import User
+
     @login_manager.user_loader
     def load_user(user_id):
         # since the user_id is just the primary key of our user table, use it in the query for the user
@@ -35,4 +35,3 @@ def create_app():
 
 
 myapp = create_app()
-

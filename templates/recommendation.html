@@ -1,6 +1,57 @@
 {% extends "base.html" %}
 
+{% block style %}
+<link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css rel="stylesheet"
+      xmlns="http://www.w3.org/1999/html">
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+{% endblock %}
+
 {% block content %}
 <section class="vh-100 bg-dark">
+    <div class="container col-12">
+            <form method='POST' action="/recommendations">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="form-group col-3 ">
+                        <label class="text-secondary" for="ingredients">What ingredients do you like in general?</label>
+                        <select class="selectpicker form-control" multiple id="ingredients" name="ingredients">
+                            {% for i in ingredients_list: %}
+                            <option value={{i}}>{{i}}</option>
+                            {%endfor%}
+                        </select>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="form-group col-3">
+                        <div class="row d-flex justify-content-center align-items-center ">
+                            <button type="submit" class="btn btn-light" name="button" value="button_cloud">Get Word Cloud</button>
+                        </div>
+                    </div>
+                    <div class="form-group col-3">
+                        <div class="row d-flex justify-content-center align-items-center ">
+                            <button type="submit" class="btn btn-light" name="button" value="button_recommendation">Get recommendation</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="row d-flex justify-content-center align-items-center">
+                {% if url:%}
+                <img src={{url}}/>
+                {% elif tables:%}
+                <div class="text-black card">
+                    {% for table in tables %}
+                    {{ table|safe }}
+                     {% endfor %}
+                </div>
+                {%else:%}
+                <div></div>
+                {%endif%}
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
 </section>
 {% endblock %}
