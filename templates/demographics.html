@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block style %}
+<link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css rel="stylesheet" xmlns="http://www.w3.org/1999/html">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+{% endblock %}
+
+{% block content %}
+<body class="bg-dark">
+    <div class="col-12">
+        <form method='POST' action="/demographics">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="form-group col-3">
+                    <label class="text-secondary" for="countries">Which countries are you interested in?</label>
+                    <select class="selectpicker form-control" multiple id="countries" name="countries">
+                        {% for i in countries_list: %}
+                        <option value={{i}}>{{i}}</option>
+                        {%endfor%}
+                    </select>
+                </div>
+
+                <div class="form-group col-3">
+                    <label class="text-secondary" for="services">Which service would you want?</label>
+                    <select class="form-control" id="services" name="services">
+                        <option value="service1" selected>Population, life expectancy, HDI</option>
+                        <option value="service2">Fertility, democracy, life expectancy</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-3">
+                    <label class="text-secondary" for="information">Which info would you want?</label>
+                    <select class="form-control" id="information" name="information">
+                        <option value="stackplot" selected>Population throughout years</option>
+                        <option value="lineplot">Life expectancy throughout years</option>
+                        <option value="pieplot">HDI</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center align-items-center mb-3" id="compare">
+            </div>
+
+            <div class="row d-flex justify-content-center align-items-center mb-3">
+                <button type="submit" class="btn btn-light">Get Result</button>
+            </div>
+        </form>
+        <div class="row d-flex justify-content-center align-items-center mb-3">
+            {% if url: %}
+                <img src={{url}} alt="Chart" height="70%" width="50%">
+            {%endif%}
+        </div>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/static/demographics.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+</body>
+{%endblock%}

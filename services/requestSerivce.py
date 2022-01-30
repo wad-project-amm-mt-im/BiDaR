@@ -2,8 +2,13 @@ from flask import Blueprint, render_template, redirect, url_for, request, flash
 from flask_login import login_required, current_user
 from werkzeug.security import generate_password_hash
 from datetime import datetime
+
+from services.demographicsService import demographics_service_1, demographics_service_2
+from services.gamesService import video_games_service_1, video_games_service_2, video_games_service_3
+from services.recommendationService import recommendation_system
 from setup import db
 from models import Interest, User
+from utils import COUNTRIES, INGREDIENTS
 
 main = Blueprint('main', __name__)
 
@@ -23,8 +28,10 @@ def profile():
     if interests:
         interests_value = [i.interest for i in interests]
 
-    return render_template('profile.html', name=current_user.name, email=current_user.email, gender=current_user.gender, state=current_user.state,
-                           birthday=datetime.strftime(current_user.birthday, '%d-%m-%Y'), interests_value=interests_value)
+    return render_template('profile.html', name=current_user.name, email=current_user.email, gender=current_user.gender,
+                           state=current_user.state,
+                           birthday=datetime.strftime(current_user.birthday, '%d-%m-%Y'),
+                           interests_value=interests_value)
 
 
 @main.route('/profile_add_interest', methods=['POST'])
@@ -101,4 +108,71 @@ def get_query():
 @main.route('/recommendations')
 @login_required
 def recommendations():
-    return render_template('recommendation.html', name=current_user.name)
+    return render_template('recommendation.html', name=current_user.name, ingredients_list=INGREDIENTS)
+
+
+@main.route('/recommendations', methods=['POST'])
+@login_required
+def post_recommendations():
+    button = request.form.get('button')
+    ingredients = request.form.getlist('ingredients')
+
+    if button == 'button_cloud':
+        url = recommendation_system(ingredients, '0')
+        return render_template('recommendation.html', name=current_user.name, ingredients_list=INGREDIENTS, url=url)
+    elif button == 'button_recommendation':
+        df = recommendation_system(ingredients, '1')
+        return render_template('recommendation.html', name=current_user.name, ingredients_list=INGREDIENTS,
+                               tables=[df.to_html(classes='table data')], titles=df.columns.values)
+
+    return render_template('recommendation.html', name=current_user.name, ingredients_list=INGREDIENTS)
+
+
+@main.route('/demographics')
+@login_required
+def demographics():
+    return render_template('demographics.html', name=current_user.name, countries_list=COUNTRIES)
+
+
+@main.route('/demographics', methods=['POST'])
+@login_required
+def post_demographics():
+    countries = request.form.getlist('countries')
+    service = request.form.get('services')
+    info = request.form.get('information')
+
+    if service == "service1":
+        url = demographics_service_1(countries, info)
+    else:
+        fertility_no = request.form.get('fertility_no')
+        democracy_no = request.form.get('democracy_no')
+        life_no = request.form.get('life_no')
+        url = demographics_service_2(countries, info, [fertility_no, democracy_no, life_no])
+
+    return render_template('demographics.html', name=current_user.name, countries_list=COUNTRIES, url=url)
+
+
+@main.route('/games')
+@login_required
+def games():
+    return render_template('games.html', name=current_user.name, countries_list=COUNTRIES)
+
+
+@main.route('/games', methods=['POST'])
+@login_required
+def post_games():
+    button = request.form.get('button')
+    exclude_countries = request.form.getlist("exclude_countries")
+    exclude_continents = request.form.getlist("exclude_continents")
+    if button == 'button_countries':
+        chart = video_games_service_1(exclude_countries, exclude_continents)
+        return render_template('games.html', name=current_user.name, countries_list=COUNTRIES, graphJSON=chart)
+    elif button == 'button_continents':
+        svg = video_games_service_2(exclude_countries, exclude_continents)
+        return render_template('games.html', name=current_user.name, countries_list=COUNTRIES, svg=svg)
+    else:
+        countries_compare1 = request.form.get("countries_compare1")
+        countries_compare2 = request.form.get("countries_compare2")
+        url = video_games_service_3([countries_compare1, countries_compare2])
+
+    return render_template('games.html', name=current_user.name, countries_list=COUNTRIES, url=url)
