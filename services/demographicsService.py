@@ -4,13 +4,16 @@ import sys
 import numpy as np
 import pandas as pd
 import pyspark
+import urllib
+import json
+
 from SPARQLWrapper import SPARQLWrapper, JSON
 from matplotlib import pyplot as plt
 from pyspark import SparkContext
 from pyspark.sql import SQLContext
 
-sc = SparkContext.getOrCreate()
-sql_context = SQLContext(sc)
+#sc = SparkContext.getOrCreate()
+#sql_context = SQLContext(sc)
 
 
 def get_wikidata_results(query: str):
@@ -21,6 +24,21 @@ def get_wikidata_results(query: str):
     sparql.setQuery(query)
     sparql.setReturnFormat(JSON)
     return sparql.query().convert()
+
+
+def get_data_from_spark_service(pd_df: pd.DataFrame, option) -> dict:
+    
+    with open("df_received.json", "w") as f:
+        f.write(pd_df.to_json())
+    service_url = 'http://localhost:5011/tasks'
+    
+    params = {
+        'df_json': pd_df.to_json(),
+        'option': option,
+    }
+    url = service_url + '?' + urllib.parse.urlencode(params)
+    result = urllib.request.urlopen(url).read()
+    return json.loads(result)
 
 
 def demographics_service_1(countries_names: list,
@@ -69,21 +87,13 @@ def demographics_service_1(countries_names: list,
 
     pd_df = pd.json_normalize(results["results"]["bindings"])
 
-    spark_df = get_spark_df(pd_df)
+    data = get_data_from_spark_service(pd_df, option)
 
     if option == "stackplot":
-
-        data = get_data_for_plots(spark_df, relevant_columns=["countryLabel", "population", "month", "year"])
         return build_stack_plot(data)
-
     elif option == "lineplot":
-
-        data = get_data_for_plots(spark_df, relevant_columns=["countryLabel", "lifeExpectancy", "month", "year"])
         return build_line_plot(data)
-
     elif option == "pieplot":
-
-        data = get_data_for_plots(spark_df, relevant_columns=["countryLabel", "HDI", "month", "year"])
         return build_pie_bar_chart(data)
 
     return pd_df
@@ -91,7 +101,7 @@ def demographics_service_1(countries_names: list,
 
 # -------------------------------------------------------------------------------
 
-
+'''
 def get_spark_df(pd_df: pd.DataFrame) -> pyspark.sql.DataFrame:
     """
       Get the datatypes of the columns in my select clause
@@ -142,7 +152,7 @@ def get_spark_df(pd_df: pd.DataFrame) -> pyspark.sql.DataFrame:
 
     return spark_df
 
-
+'''
 # -------------------------------------------------------------------------------
 
 

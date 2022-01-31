@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 
+{% block style %}
+<link href=https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css rel="stylesheet"
+      xmlns="http://www.w3.org/1999/html">
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+{% endblock %}
+
 {% block content %}
 <style type="text/css">
     #graph{
@@ -23,6 +30,7 @@
     <div class="mask d-flex align-items-center h-100">
         <div class="container h-100">
             <div class="row d-flex justify-content-center align-items-start h-100">
+               
                 <div vocab="http://schema.org/">
                     <div>
                         <p property="PronounceableText" class="text-white"> The search was succesfully executed</p>
@@ -44,7 +52,7 @@
                     <form method="POST" action="/download">
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">Downlad format</label>
-                            <select name ="download_format" class="form-control" id="exampleFormControlSelect1">
+                            <select name ="download_format" class="form-control selectpicker" id="exampleFormControlSelect1">
                               <option>json-ld</option>
                               <option>xml</option>
                               <option>ttl</option>
@@ -62,9 +70,10 @@
             </div>
             
         </div>
-       
-</section>
-<section>
-   
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+        
 </section>
 {% endblock %}

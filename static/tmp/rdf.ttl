@@ -2,129 +2,119 @@
 @prefix goog: <http://schema.googleapis.com/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<kg:/g/11b8_sgxq7> a :SoftwareApplication,
+<kg:/g/11cnt6t04z> a :CreativeWork,
+        :MovieSeries,
         :Thing ;
-    goog:detailedDescription [ :articleBody "SHAREit is a peer to peer file sharing, content streaming and gaming platform that supports online and offline sharing of files and contents. " ;
+    :description "Film series" ;
+    :name "Godzilla" .
+
+<kg:/m/0210p1> a :Thing ;
+    goog:detailedDescription [ :articleBody "A godparent, in paedo-baptist denominations of Christianity, is someone who bears witness to a child's christening and later is willing to help in their catechesis, as well as their lifelong spiritual formation. " ;
             :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
-            :url "https://en.wikipedia.org/wiki/SHAREit" ] ;
-    :description "Downloadable software" ;
-    :name "SHAREit" .
+            :url "https://en.wikipedia.org/wiki/Godparent" ] ;
+    :name "Godparent" .
 
-<kg:/g/11mbw10k8v> a :Person,
+<kg:/m/02qwg> a :Person,
         :Thing ;
-    :description "YouTuber" ;
-    :name "Technoblade" .
+    goog:detailedDescription [ :articleBody "Eric Patrick Clapton CBE is an English rock and blues guitarist, singer, and songwriter, widely regarded as one of the most important and influential guitarists of all time. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Eric_Clapton" ] ;
+    :description "English guitarist" ;
+    :name "Eric Clapton" ;
+    :url "http://www.ericclapton.com/" .
 
-<kg:/m/01qkl1> a :Corporation,
+<kg:/m/03bpv> a :Thing ;
+    goog:detailedDescription [ :articleBody """A goddess is a female deity.
+In many known cultures, goddesses are often linked with literal or metaphorical pregnancy or imagined feminine roles associated with how women and girls are perceived or expected to behave. """ ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Goddess" ] ;
+    :name "Goddess" .
+
+<kg:/m/03zjn4> a :Corporation,
         :Organization,
         :Thing ;
-    goog:detailedDescription [ :articleBody "Huawei Technologies Co., Ltd. is a Chinese multinational technology corporation headquartered in Shenzhen, Guangdong, China. It designs, develops and sells telecommunications equipment, consumer electronics and various smart devices. " ;
+    goog:detailedDescription [ :articleBody """GoDaddy Inc. is an American publicly traded Internet domain registrar and web hosting company headquartered in Tempe, Arizona and incorporated in Delaware.
+As of December 2021, GoDaddy has more than 20 million customers and over 9,000 employees worldwide. The company is known for its advertising on TV and in the newspapers. """ ;
             :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
-            :url "https://en.wikipedia.org/wiki/Huawei" ] ;
-    :description "Telecommunications equipment company" ;
-    :name "Huawei" ;
-    :url "http://www.huawei.com/" .
-
-<kg:/m/03mhg37> a :Corporation,
-        :Organization,
-        :Thing ;
-    goog:detailedDescription [ :articleBody "SCF Technoavia, or Scientific Commercial Firm Technoavia, is a Russian aircraft manufacturer. It was established in 1991 by Vyacheslav Kondratiev. The main production facility is located at the Smolensk Aviation Plant." ;
-            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
-            :url "https://en.wikipedia.org/wiki/Technoavia" ] ;
-    :description "Aircraft manufacturer" ;
-    :name "Technoavia" .
-
-<kg:/m/03nt3xv> a :Corporation,
-        :Organization,
-        :Thing ;
-    goog:detailedDescription [ :articleBody "Technogym is a company selling equipment and digital technologies for fitness, sport and health based in Cesena, Italy. Technogym has been Official Supplier to eight Olympic Games including the Tokyo 2020 games. " ;
-            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
-            :url "https://en.wikipedia.org/wiki/Technogym" ] ;
+            :url "https://en.wikipedia.org/wiki/GoDaddy" ] ;
     :description "Company" ;
-    :name "Technogym" ;
-    :url "http://www.technogym.com" .
+    :name "GoDaddy" ;
+    :url "http://www.godaddy.com/" .
 
-<kg:/m/04rwx> a :CollegeOrUniversity,
-        :Corporation,
-        :EducationalOrganization,
-        :MovieTheater,
+<kg:/m/051j2j> a :Corporation,
         :Organization,
-        :Place,
         :Thing ;
-    goog:detailedDescription [ :articleBody """Massachusetts Institute of Technology is a private land-grant research university in Cambridge, Massachusetts. Established in 1861, MIT has since played a key role in the development of modern technology and science, ranking it among the top academic institutions in the world.
+    goog:detailedDescription [ :articleBody """Godiva Chocolatier is a Belgian chocolate maker which is jointly owned by Turkish conglomerate Yıldız Holding and South Korean equity company MBK Partners.
 """ ;
             :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
-            :url "https://en.wikipedia.org/wiki/Massachusetts_Institute_of_Technology" ] ;
-    :description "Land-grant university in Cambridge, Massachusetts" ;
-    :name "Massachusetts Institute of Technology" ;
-    :url "http://mit.edu/" .
-
-<kg:/m/07c1v> a :Thing ;
-    goog:detailedDescription [ :articleBody "Technology is the sum of any techniques, skills, methods, and processes used in the production of goods or services or in the accomplishment of objectives, such as scientific investigation. " ;
-            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
-            :url "https://en.wikipedia.org/wiki/Technology" ] ;
-    :name "Technology" .
-
-<kg:/m/07gxw> a :Thing ;
-    goog:detailedDescription [ :articleBody "Techno is a genre of electronic dance music that is predominantly characterized by a repetitive and hard four on the floor beat which is generally produced for use in a continuous DJ set. " ;
-            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
-            :url "https://en.wikipedia.org/wiki/Techno" ] ;
-    :description "Musical genre" ;
-    :name "Techno" .
-
-<kg:/m/07sw45> a :CableOrSatelliteProvider,
-        :Corporation,
-        :Organization,
-        :Thing ;
-    goog:detailedDescription [ :articleBody """Lumen Technologies, Inc. is an American
-telecommunications company headquartered in Monroe, Louisiana, that offers communications, network services, security, cloud solutions, voice, and managed services. """ ;
-            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
-            :url "https://en.wikipedia.org/wiki/Lumen_Technologies" ] ;
+            :url "https://en.wikipedia.org/wiki/Godiva_Chocolatier" ] ;
     :description "Company" ;
-    :name "Lumen Technologies" ;
-    :url "http://www.centurylink.com/" .
+    :name "Godiva Chocolatier" ;
+    :url "http://www.godiva.be" .
 
-<kg:/m/0py9b> a :Corporation,
-        :Organization,
-        :Product,
-        :ProductModel,
+<kg:/m/069nv4> a :Person,
         :Thing ;
-    goog:detailedDescription [ :articleBody "Dell is an American company that develops, sells, repairs, and supports computers and related products and services, and is owned by its parent company of Dell Technologies. " ;
+    goog:detailedDescription [ :articleBody "Pawan Kalyan is an Indian actor, director, screenwriter, stunt coordinator, philanthropist, and politician. His films are predominantly in Telugu cinema. " ;
             :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
-            :url "https://en.wikipedia.org/wiki/Dell" ] ;
-    :description "Computer company" ;
-    :name "Dell" ;
-    :url "http://www.dell.com" .
+            :url "https://en.wikipedia.org/wiki/Pawan_Kalyan" ] ;
+    :description "Indian actor" ;
+    :name "Pawan Kalyan" .
+
+<kg:/m/07g1sm> a :CreativeWork,
+        :Movie,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "The Godfather is a 1972 American crime film directed by Francis Ford Coppola, who co-wrote the screenplay with Mario Puzo, based on Puzo's best-selling 1969 novel of the same name. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/The_Godfather" ] ;
+    :description "1972 film" ;
+    :name "The Godfather" ;
+    :url "http://www.thegodfather.com" .
+
+<kg:/m/0_6st0j> a :Thing ;
+    goog:detailedDescription [ :articleBody "The Godzilla franchise is a Japanese media franchise created and owned by Toho Co., Ltd, centered on the fictional kaiju character Godzilla. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Godzilla_(franchise)" ] ;
+    :name "Godzilla" .
+
+<kg:/m/0p9lw> a :CreativeWork,
+        :Movie,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Dogma is a 1999 American fantasy comedy film written and directed by Kevin Smith, who also stars with Ben Affleck, Matt Damon, George Carlin, Linda Fiorentino, Janeane Garofalo, Chris Rock, Jason Lee, Salma Hayek, Bud Cort, Alan Rickman, Alanis Morissette and Jason Mewes. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Dogma_(film)" ] ;
+    :description "1999 film" ;
+    :name "Dogma" ;
+    :url "http://www.dogma-movie.com/" .
 
 [] a :ItemList ;
     :itemListElement [ a goog:EntitySearchResult ;
-            goog:resultScore 4.066203e+02 ;
-            :result <kg:/m/0py9b> ],
+            goog:resultScore 2.534741e+03 ;
+            :result <kg:/g/11cnt6t04z> ],
         [ a goog:EntitySearchResult ;
-            goog:resultScore 3.702927e+03 ;
-            :result <kg:/m/07gxw> ],
+            goog:resultScore 5.87574e+03 ;
+            :result <kg:/m/03zjn4> ],
         [ a goog:EntitySearchResult ;
-            goog:resultScore 1.745183e+03 ;
-            :result <kg:/g/11mbw10k8v> ],
+            goog:resultScore 1.465244e+03 ;
+            :result <kg:/m/051j2j> ],
         [ a goog:EntitySearchResult ;
-            goog:resultScore 1.2783e+03 ;
-            :result <kg:/m/03nt3xv> ],
+            goog:resultScore 1.768204e+03 ;
+            :result <kg:/m/0p9lw> ],
         [ a goog:EntitySearchResult ;
-            goog:resultScore 4.517698e+02 ;
-            :result <kg:/m/01qkl1> ],
+            goog:resultScore 4.750488e+03 ;
+            :result <kg:/m/02qwg> ],
         [ a goog:EntitySearchResult ;
-            goog:resultScore 7.125383e+02 ;
-            :result <kg:/m/03mhg37> ],
+            goog:resultScore 1.813167e+03 ;
+            :result <kg:/m/07g1sm> ],
         [ a goog:EntitySearchResult ;
-            goog:resultScore 4.387065e+02 ;
-            :result <kg:/m/04rwx> ],
+            goog:resultScore 1.423362e+03 ;
+            :result <kg:/m/0210p1> ],
         [ a goog:EntitySearchResult ;
-            goog:resultScore 4.072933e+02 ;
-            :result <kg:/g/11b8_sgxq7> ],
+            goog:resultScore 1.192261e+03 ;
+            :result <kg:/m/0_6st0j> ],
         [ a goog:EntitySearchResult ;
-            goog:resultScore 5.107175e+02 ;
-            :result <kg:/m/07sw45> ],
+            goog:resultScore 2.327463e+03 ;
+            :result <kg:/m/069nv4> ],
         [ a goog:EntitySearchResult ;
-            goog:resultScore 4.234553e+03 ;
-            :result <kg:/m/07c1v> ] .
+            goog:resultScore 1.843035e+03 ;
+            :result <kg:/m/03bpv> ] .
 

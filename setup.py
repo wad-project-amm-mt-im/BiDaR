@@ -37,8 +37,8 @@ def create_app():
     from services.requestSerivce import main as main_blueprint
     application.register_blueprint(main_blueprint)
 
-    from services.rest_api import rest as rest_blueprint
-    application.register_blueprint(rest_blueprint)
+    #from services.rest_api import rest as rest_blueprint
+    #application.register_blueprint(rest_blueprint)
 
     return application
 

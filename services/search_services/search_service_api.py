@@ -1,6 +1,5 @@
 from flask import Blueprint, render_template, make_response, session, url_for, request, Markup
 from flask_login import login_required, current_user
-from services.search_services.googleSearchMservice.micro_google_search import searchOnGoogle
 import json, urllib
 searchModule = Blueprint('search', __name__)
 
@@ -16,10 +15,8 @@ def search():
 def get_query():
     if request.form.get('query'):
         querry = request.form.get('query')
-        # result = searchOnGoogle(querry) # search micro service call
-        # #api_key = "AIzaSyC_ygBUVNG-9YRUk4hb8-ULNPaOH7mThIQ"
         
-        service_url = 'http://192.168.223.128:5001/'
+        service_url = 'http://192.168.223.128:5003/'
         params = {
             'querry': querry,
             'limit': 10,
@@ -29,14 +26,14 @@ def get_query():
         
         
 
-        service_url = 'http://192.168.223.128:5003/'
+        service_url = 'http://192.168.223.128:5002/'
         params = {
             'rdf_content': result,
         }
 
         url = service_url + '?' + urllib.parse.urlencode(params)
         svg_content = urllib.request.urlopen(url).read().decode("utf-8")
-            
+        # svg_content = create_svg(result)  
         svg_path = "./static/tmp/svg_visualization.svg"
         rdf_path = "./static/tmp/rdf.ttl"
             
