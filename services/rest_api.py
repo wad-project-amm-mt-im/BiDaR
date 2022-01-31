@@ -293,7 +293,7 @@ def recommendation(type):
 
 
 @rest.route('/rest/search/<topic>', methods=['GET'])
-def recommendation(topic):
+def search(topic):
     if not current_user.is_authenticated:
         resp = jsonify({'message': 'Login first'})
         resp.status_code = 400
