@@ -1,0 +1,130 @@
+@prefix : <http://schema.org/> .
+@prefix goog: <http://schema.googleapis.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<kg:/g/11b8_sgxq7> a :SoftwareApplication,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "SHAREit is a peer to peer file sharing, content streaming and gaming platform that supports online and offline sharing of files and contents. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/SHAREit" ] ;
+    :description "Downloadable software" ;
+    :name "SHAREit" .
+
+<kg:/g/11mbw10k8v> a :Person,
+        :Thing ;
+    :description "YouTuber" ;
+    :name "Technoblade" .
+
+<kg:/m/01qkl1> a :Corporation,
+        :Organization,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Huawei Technologies Co., Ltd. is a Chinese multinational technology corporation headquartered in Shenzhen, Guangdong, China. It designs, develops and sells telecommunications equipment, consumer electronics and various smart devices. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Huawei" ] ;
+    :description "Telecommunications equipment company" ;
+    :name "Huawei" ;
+    :url "http://www.huawei.com/" .
+
+<kg:/m/03mhg37> a :Corporation,
+        :Organization,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "SCF Technoavia, or Scientific Commercial Firm Technoavia, is a Russian aircraft manufacturer. It was established in 1991 by Vyacheslav Kondratiev. The main production facility is located at the Smolensk Aviation Plant." ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Technoavia" ] ;
+    :description "Aircraft manufacturer" ;
+    :name "Technoavia" .
+
+<kg:/m/03nt3xv> a :Corporation,
+        :Organization,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Technogym is a company selling equipment and digital technologies for fitness, sport and health based in Cesena, Italy. Technogym has been Official Supplier to eight Olympic Games including the Tokyo 2020 games. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Technogym" ] ;
+    :description "Company" ;
+    :name "Technogym" ;
+    :url "http://www.technogym.com" .
+
+<kg:/m/04rwx> a :CollegeOrUniversity,
+        :Corporation,
+        :EducationalOrganization,
+        :MovieTheater,
+        :Organization,
+        :Place,
+        :Thing ;
+    goog:detailedDescription [ :articleBody """Massachusetts Institute of Technology is a private land-grant research university in Cambridge, Massachusetts. Established in 1861, MIT has since played a key role in the development of modern technology and science, ranking it among the top academic institutions in the world.
+""" ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Massachusetts_Institute_of_Technology" ] ;
+    :description "Land-grant university in Cambridge, Massachusetts" ;
+    :name "Massachusetts Institute of Technology" ;
+    :url "http://mit.edu/" .
+
+<kg:/m/07c1v> a :Thing ;
+    goog:detailedDescription [ :articleBody "Technology is the sum of any techniques, skills, methods, and processes used in the production of goods or services or in the accomplishment of objectives, such as scientific investigation. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Technology" ] ;
+    :name "Technology" .
+
+<kg:/m/07gxw> a :Thing ;
+    goog:detailedDescription [ :articleBody "Techno is a genre of electronic dance music that is predominantly characterized by a repetitive and hard four on the floor beat which is generally produced for use in a continuous DJ set. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Techno" ] ;
+    :description "Musical genre" ;
+    :name "Techno" .
+
+<kg:/m/07sw45> a :CableOrSatelliteProvider,
+        :Corporation,
+        :Organization,
+        :Thing ;
+    goog:detailedDescription [ :articleBody """Lumen Technologies, Inc. is an American
+telecommunications company headquartered in Monroe, Louisiana, that offers communications, network services, security, cloud solutions, voice, and managed services. """ ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Lumen_Technologies" ] ;
+    :description "Company" ;
+    :name "Lumen Technologies" ;
+    :url "http://www.centurylink.com/" .
+
+<kg:/m/0py9b> a :Corporation,
+        :Organization,
+        :Product,
+        :ProductModel,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Dell is an American company that develops, sells, repairs, and supports computers and related products and services, and is owned by its parent company of Dell Technologies. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Dell" ] ;
+    :description "Computer company" ;
+    :name "Dell" ;
+    :url "http://www.dell.com" .
+
+[] a :ItemList ;
+    :itemListElement [ a goog:EntitySearchResult ;
+            goog:resultScore 4.066203e+02 ;
+            :result <kg:/m/0py9b> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 3.702927e+03 ;
+            :result <kg:/m/07gxw> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.745183e+03 ;
+            :result <kg:/g/11mbw10k8v> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.2783e+03 ;
+            :result <kg:/m/03nt3xv> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 4.517698e+02 ;
+            :result <kg:/m/01qkl1> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 7.125383e+02 ;
+            :result <kg:/m/03mhg37> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 4.387065e+02 ;
+            :result <kg:/m/04rwx> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 4.072933e+02 ;
+            :result <kg:/g/11b8_sgxq7> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 5.107175e+02 ;
+            :result <kg:/m/07sw45> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 4.234553e+03 ;
+            :result <kg:/m/07c1v> ] .
+
