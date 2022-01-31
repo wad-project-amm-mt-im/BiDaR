@@ -1,0 +1,1081 @@
+@prefix : <http://schema.org/> .
+@prefix goog: <http://schema.googleapis.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<kg:/g/11b7rcyfj2> a :Person,
+        :Thing ;
+    :description "Film producer" ;
+    :name "Jasmine Fontes" .
+
+<kg:/g/11b81x8rg6> a :CreativeWork,
+        :TVSeries,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "I Am Jazz is an American reality television series on TLC about a transgender girl named Jazz Jennings. The series features Jazz and her family \"dealing with typical teen drama through the lens of a transgender youth.\" " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/I_Am_Jazz" ] ;
+    :description "Television series" ;
+    :name "I Am Jazz" .
+
+<kg:/g/11b8symyn1> a :CreativeWork,
+        :Movie,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Born to Be Blue is a 2015 internationally co-produced drama film directed, produced and written by Robert Budreau. The film stars Ethan Hawke and Carmen Ejogo. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Born_to_Be_Blue_(film)" ] ;
+    :description "2015 film" ;
+    :name "Born to Be Blue" .
+
+<kg:/g/11c6h14k47> a :Corporation,
+        :Organization,
+        :Thing ;
+    goog:detailedDescription [ :articleBody """Pakistan Mobile Communications Limited, doing business as Jazz, is a Pakistani mobile network and internet services provider in formed by the merger of Mobilink and Warid.
+""" ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_(mobile_network_operator)" ] ;
+    :description "Corporation" ;
+    :name "Jazz" .
+
+<kg:/g/11f2656wnd> a :Thing ;
+    :description "Song by James Brown" ;
+    :name "Get Up I Feel Like Being Like a Sex Machine" .
+
+<kg:/g/11f26949jn> a :Thing ;
+    :description "Song by A Tribe Called Quest" ;
+    :name "Jazz (We’ve Got)" .
+
+<kg:/g/11fkqbxmwv> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Josiah Alan Brooks, known online as Jazza is an Australian YouTuber, artist, animator, and presenter best known for his art tutorials, challenges, and animations. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazza_(YouTuber)" ] ;
+    :description "Australian YouTuber" ;
+    :name "Jazza" .
+
+<kg:/g/11fy4cjf4n> a :Thing ;
+    :description "Fictional character" ;
+    :name "Jazz" .
+
+<kg:/g/11g10jq09w> a :MusicGroup,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "JazziDisciples are an amapiano DJ and producer duo originating from South Africa. They are composed of two record producers known by their stage names Mr JazziQ and Josiah De Disciple." ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/JazziDisciples" ] ;
+    :description "Duo" ;
+    :name "JazziDisciples" .
+
+<kg:/g/11h3lgdrx9> a :Corporation,
+        :Organization,
+        :Thing ;
+    :description "Company" ;
+    :name "Jazzware, Inc." .
+
+<kg:/g/11h4nhh4h8> a :Thing ;
+    goog:detailedDescription [ :articleBody "Jazz is a design that is featured on disposable cups. The design was introduced in 1992, and is considered an icon of 1990s culture. Jazz has also become a meme and has gained a cult following. Fans have applied the design to various objects, including automobiles, shirts, and shoes. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_(design)" ] ;
+    :name "Jazz" .
+
+<kg:/g/11hb69dddz> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Jazz Ishmael Butler, professionally known as Lil Tracy, is an American rapper, singer, and songwriter. He was also known under the name Yung Bruh during the beginning of his career. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Lil_Tracy" ] ;
+    :description "Singer" ;
+    :name "Lil Tracy" .
+
+<kg:/g/11j2xgpq6l> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Tumelo Manyoni known professionally as Mr JazziQ, is a South African Amapiano DJ and record producer. He was best known for being a member of the amapiano DJ duo, JazziDisciples." ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Mr_JazziQ" ] ;
+    :description "Musician" ;
+    :name "Mr JazziQ" .
+
+<kg:/g/121rpsf_> a :Thing ;
+    :description "Music Festival" ;
+    :name "Nancy Jazz Pulsations" .
+
+<kg:/g/1q2xhgq_x> a :Thing ;
+    goog:detailedDescription [ :articleBody "ETR 324, ETR 425 and ETR 526 \"Jazz\" are some Italian Electric multiple units used mainly for commuter regional trains." ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_(Italian_EMU)" ] ;
+    :name "Jazz" .
+
+<kg:/g/1q5j3hf0c> a :Thing ;
+    :description "Song by Scatman John" ;
+    :name "Scatman" .
+
+<kg:/g/1s05p2fm1> a :Thing ;
+    :description "Song by James Brown" ;
+    :name "I Got You" .
+
+<kg:/m/010fwz69> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody """Daisy Jazz Isobel Ridley is an English actress, who rose to prominence for her role as Rey in the Star Wars sequel trilogy: The Force Awakens, The Last Jedi, and The Rise of Skywalker.
+""" ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Daisy_Ridley" ] ;
+    :description "Actress" ;
+    :name "Daisy Ridley" .
+
+<kg:/m/0147dk> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Willard Carroll Smith II, also known by his stage name The Fresh Prince, is an American actor, rapper, and film producer. Primarily known for comedic and dramatic acting roles, Smith is the recipient of numerous accolades, including four Grammy Awards, one Golden Globe Award, and two Academy Award nominations. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Will_Smith" ] ;
+    :description "American actor" ;
+    :name "Will Smith" ;
+    :url "http://www.willsmith.com/" .
+
+<kg:/m/018j3w> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Ernest Anthony Puente Jr., commonly known as Tito Puente, was an American musician, songwriter, bandleader, and record producer of Puerto Rican descent. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Tito_Puente" ] ;
+    :description "American musician" ;
+    :name "Tito Puente" ;
+    :url "http://www.titopuenteonline.com/" .
+
+<kg:/m/01bwdt> a :MusicAlbum,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Kind of Blue is a studio album by American jazz trumpeter, composer, and bandleader Miles Davis. It was recorded on March 2 and April 22, 1959, at Columbia's 30th Street Studio in New York City, and released on August 17 of that year by Columbia Records. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Kind_of_Blue" ] ;
+    :description "Studio album by Miles Davis" ;
+    :name "Kind of Blue" .
+
+<kg:/m/01cd2k> a :Event,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "The Jazz Age was a period in the 1920s and 1930s in which jazz music and dance styles rapidly gained nationwide popularity in the United States. The Jazz Age's cultural repercussions were primarily felt in the United States, the birthplace of jazz. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_Age" ] ;
+    :name "Jazz Age" .
+
+<kg:/m/01cx4t> a :Thing,
+        :TouristAttraction ;
+    goog:detailedDescription [ :articleBody "The North Sea Jazz Festival is an annual festival held each second weekend of July in the Netherlands at the Ahoy venue. It used to be in The Hague but since 2006 it has been held in Rotterdam. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/North_Sea_Jazz_Festival" ] ;
+    :description "Music Festival" ;
+    :name "NN North Sea Jazz Festival" ;
+    :url "http://www.northseajazz.nl" .
+
+<kg:/m/01f9y_> a :Thing ;
+    goog:detailedDescription [ :articleBody "Jazz rap is a fusion of jazz and hip hop music, as well as an alternative hip hop subgenre, that developed in the late 1980s and early 1990s. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_rap" ] ;
+    :description "Musical genre" ;
+    :name "Jazz rap" .
+
+<kg:/m/01fh36> a :Thing ;
+    goog:detailedDescription [ :articleBody "Jazz fusion is a music genre that developed in the late 1960s when musicians combined jazz harmony and improvisation with rock music, funk, and rhythm and blues. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_fusion" ] ;
+    :description "Musical genre" ;
+    :name "Jazz fusion" .
+
+<kg:/m/01hdjlk> a :MusicAlbum,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Jazz is the seventh studio album by the British rock band Queen. It was released on 10 November 1978 by EMI Records in the United Kingdom and by Elektra Records in the United States. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_(Queen_album)" ] ;
+    :description "Studio album by Queen" ;
+    :name "Jazz" .
+
+<kg:/m/01k9wl> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody """Arthur Blakey was an American jazz drummer and bandleader. He was also known as Abdullah Ibn Buhaina after he converted to Islam for a short time in the late 1940s.
+""" ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Art_Blakey" ] ;
+    :description "American jazz drummer" ;
+    :name "Art Blakey" ;
+    :url "http://www.artblakey.com/" .
+
+<kg:/m/01kpv04> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Otis Jackson Jr., known professionally as Madlib, is an American DJ, music producer, multi-instrumentalist, and rapper. One of the most prolific and critically acclaimed hip hop producers of the 2000s, he is widely known for his collaborations with MF Doom, J Dilla, and Freddie Gibbs. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Madlib" ] ;
+    :description "American DJ" ;
+    :name "Madlib" ;
+    :url "http://www.stonesthrow.com/madlib/" .
+
+<kg:/m/01l39h> a :Thing ;
+    goog:detailedDescription [ :articleBody "Jazz standards are musical compositions that are an important part of the musical repertoire of jazz musicians, in that they are widely known, performed, and recorded by jazz musicians, and widely known by listeners. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_standard" ] ;
+    :name "Jazz standard" .
+
+<kg:/m/01mzvc> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "William Otis Laswell is an American bass guitarist, record producer, and record label owner. He has been involved in thousands of recordings with many collaborators from all over the world. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Bill_Laswell" ] ;
+    :description "American bassist" ;
+    :name "Bill Laswell" ;
+    :url "http://innerhythmic.com/bill-laswell/" .
+
+<kg:/m/01n4bh> a :Thing ;
+    goog:detailedDescription [ :articleBody "Acid jazz, also known as club jazz, is a music genre that combines elements of funk, soul, hip hop, as well as jazz and disco. Acid jazz originated in clubs in London during the 1980s with the rare groove movement and spread to the United States, Japan, Eastern Europe, and Brazil. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Acid_jazz" ] ;
+    :description "Musical genre" ;
+    :name "Acid jazz" .
+
+<kg:/m/01p_2p> a :Thing ;
+    goog:detailedDescription [ :articleBody "Latin jazz is a genre of jazz with Latin American rhythms. The two main categories are Afro-Cuban jazz, rhythmically based on Cuban popular dance music, with a rhythm section employing ostinato patterns or a clave, and Afro-Brazilian jazz, which includes samba and bossa nova." ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Latin_jazz" ] ;
+    :description "Musical genre" ;
+    :name "Latin jazz" .
+
+<kg:/m/01ppfv> a :Thing ;
+    goog:detailedDescription [ :articleBody "Cool jazz is a style of modern jazz music that arose in the United States after World War II. It is characterized by relaxed tempos and lighter tone, in contrast to the fast and complex bebop style. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Cool_jazz" ] ;
+    :description "Musical style" ;
+    :name "Cool jazz" .
+
+<kg:/m/01sll7r> a :MusicGroup,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Animal ДжаZ is a Saint Petersburg-based band playing alternative rock and pop rock. They were formed in 2000. As of 2020, they have released 15 studio albums, including five acoustic albums." ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Animal_Jazz" ] ;
+    :description "Band" ;
+    :name "Animal Jazz" ;
+    :url "http://www.animaljazz.com/" .
+
+<kg:/m/01smqh> a :Airline,
+        :Corporation,
+        :Organization,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Jazz Aviation LP, commonly shortened to Jazz, is a Canadian regional airline based at Halifax Stanfield International Airport in Enfield, Halifax Regional Municipality, Nova Scotia, and is a wholly owned subsidiary of Chorus Aviation. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_(airline)" ] ;
+    :description "Regional airline" ;
+    :name "Jazz" ;
+    :url "http://www.flyjazz.ca/" .
+
+<kg:/m/01vsdgg> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Jeffrey Allen Townes, known professionally as DJ Jazzy Jeff, is an American DJ, record producer, and songwriter who was a member of DJ Jazzy Jeff &amp; the Fresh Prince with Will Smith. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/DJ_Jazzy_Jeff" ] ;
+    :description "American DJ" ;
+    :name "DJ Jazzy Jeff" ;
+    :url "http://www.djjazzyjeff.com/" .
+
+<kg:/m/01vw20h> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Shawn Corey Carter, known professionally as Jay-Z, is an American rapper, songwriter, record executive, entrepreneur, and media proprietor. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jay-Z" ] ;
+    :description "American rapper" ;
+    :name "JAY-Z" ;
+    :url "http://lifeandtimes.com/" .
+
+<kg:/m/01vw77> a :Thing ;
+    goog:detailedDescription [ :articleBody "Nu jazz is a genre of jazz and electronic music. The music blends jazz elements with other musical styles, such as funk, electronic music, and free improvisation." ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Nu_jazz" ] ;
+    :description "Musical genre" ;
+    :name "Nu jazz" .
+
+<kg:/m/026b8p> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Frankie Laine was an American singer, songwriter, and actor whose career spanned nearly 75 years, from his first concerts in 1930 with a marathon dance company to his final performance of \"That's My Desire\" in 2005. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Frankie_Laine" ] ;
+    :description "American singer-songwriter" ;
+    :name "Frankie Laine" ;
+    :url "http://www.frankielaine.com/" .
+
+<kg:/m/027vsf5> a :Thing ;
+    goog:detailedDescription [ :articleBody "The origin of the word jazz is one of the most sought-after word origins in modern American English. Interest in the word – the American Dialect Society named it the Word of the Twentieth Century in 2000 – has resulted in considerable research and the linguistic history is well documented. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_(word)" ] ;
+    :name "Jazz" .
+
+<kg:/m/027z2cl> a :Periodical,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "JazzTimes is an American magazine devoted to jazz. Published 10 times a year, it was founded in Washington, D.C. in 1970 by Ira Sabin as the newsletter Radio Free Jazz to complement his record store." ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/JazzTimes" ] ;
+    :description "Magazine" ;
+    :name "JazzTimes" .
+
+<kg:/m/0283v86> a :Thing ;
+    goog:detailedDescription [ :articleBody """Jazz Radio is a French radio station dedicated to jazz and soul that started in 1996.
+Jazz Radio is based in Lyon, France, and broadcasts with around 45 frequencies throughout France and Monaco.""" ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_Radio" ] ;
+    :description "Radio network" ;
+    :name "Jazz Radio" .
+
+<kg:/m/02b667> a :Thing,
+        :TouristAttraction ;
+    goog:detailedDescription [ :articleBody "The Montreux Jazz Festival is a music festival in Switzerland, held annually in early July in Montreux on the Lake Geneva shoreline. It is the second largest annual jazz festival in the world after Canada's Montreal International Jazz Festival." ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Montreux_Jazz_Festival" ] ;
+    :description "Music Festival" ;
+    :name "Montreux Jazz Festival" ;
+    :url "http://www.montreuxjazz.com/" .
+
+<kg:/m/02bh3_> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Erroll Louis Garner was an American jazz pianist and composer known for his swing playing and ballads. His best-known composition, the ballad \"Misty\", has become a jazz standard. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Erroll_Garner" ] ;
+    :description "American jazz pianist" ;
+    :name "Erroll Garner" .
+
+<kg:/m/02phqpy> a :Corporation,
+        :Organization,
+        :Thing ;
+    goog:detailedDescription [ :articleBody """Jazztel is a Spanish telecommunications company which offers triple play services. Jazztel was founded in 1998 by Martin Varsavsky. Jazztel is a Spanish company, owned by a British company called Jazztel p.l.c. It was incorporated under the laws of England and Wales in July 1998. It is Registered in England and Wales with Company Number 3597184. Its Registered Office is at 20-22 Bedford Row, London, WC1R 4JS, UK.
+Jazztel p.l.c. is listed on the Spanish Nuevo Mercado since December 18, 2000. """ ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazztel" ] ;
+    :description "Telecommunications company" ;
+    :name "Jazztel" ;
+    :url "http://www.jazztel.com/" .
+
+<kg:/m/02r1b17> a :Thing ;
+    goog:detailedDescription [ :articleBody "A jazz club is a venue where the primary entertainment is the performance of live jazz music, although some jazz clubs primarily focus on the study and/or promotion of jazz-music. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_club" ] ;
+    :name "Jazz club" .
+
+<kg:/m/02rxbck> a :Thing ;
+    goog:detailedDescription [ :articleBody "Jazz guitarists are guitarists who play jazz using an approach to chords, melodies, and improvised solo lines which is called jazz guitar playing. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_guitarist" ] ;
+    :description "Career" ;
+    :name "Jazz guitarist" .
+
+<kg:/m/02rzq62> a :Thing ;
+    goog:detailedDescription [ :articleBody "Mainstream jazz is a term coined in the 1950s by music journalist Stanley Dance, who considered anything within the popular jazz of the Swing Era \"mainstream\", and did not include the bebop style." ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Mainstream_jazz" ] ;
+    :description "Musical style" ;
+    :name "Mainstream jazz" .
+
+<kg:/m/02vpxb0> a :BroadcastChannel,
+        :RadioStation,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "NPO Radio 2 Soul &amp; Jazz is a digital radio station from Netherlands Public Broadcasting. It launched as NPO Radio 6 on 4 September 2006, when it took over from the Concertzender, its musical format is mainly soul and jazz, together with such related genres as funk, rhythm and blues, and world music. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/NPO_Radio_2_Soul_&_Jazz" ] ;
+    :description "Digital radio station" ;
+    :name "NPO Radio 2 Soul &amp; Jazz" .
+
+<kg:/m/02vrfqt> a :CreativeWork,
+        :Movie,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "We Are from Jazz is a 1983 Soviet comedy musical film by Karen Shahnazarov." ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/We_Are_from_Jazz" ] ;
+    :description "1983 film" ;
+    :name "We Are from Jazz" .
+
+<kg:/m/02x13zt> a :Thing ;
+    :description "Fictional character" ;
+    :name "Jasper Hale" .
+
+<kg:/m/037n97> a :Thing ;
+    goog:detailedDescription [ :articleBody "Smooth jazz is a genre of commercially oriented crossover jazz and easy listening music that became dominant in the mid 1970s to the early 1990s." ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Smooth_jazz" ] ;
+    :description "Musical genre" ;
+    :name "Smooth jazz" .
+
+<kg:/m/039fjd> a :Thing,
+        :TouristAttraction ;
+    goog:detailedDescription [ :articleBody "The Festival International de Jazz de Montréal is an annual jazz festival held in Montreal, Quebec, Canada. The Montreal Jazz Fest holds the 2004 Guinness World Record as the world's largest jazz festival. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Montreal_International_Jazz_Festival" ] ;
+    :description "Music Festival" ;
+    :name "Montreal International Jazz Festival" ;
+    :url "http://www.montrealjazzfest.com" .
+
+<kg:/m/03_9vr> a :BroadcastChannel,
+        :RadioStation,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "CJRT-FM is a Canadian public radio station which broadcasts at 91.1 FM in Toronto, Ontario as JAZZ.FM91. CJRT's studios are on Pardee Avenue in the Liberty Village neighbourhood of Toronto. The station is simulcast on Bell Satellite TV channel 960." ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/CJRT-FM" ] ;
+    :description "Radio station" ;
+    :name "CJRT-FM" .
+
+<kg:/m/03_d0> a :Thing ;
+    goog:detailedDescription [ :articleBody "Jazz is a music genre that originated in the African-American communities of New Orleans, Louisiana, United States, in the late 19th and early 20th centuries, with its roots in blues and ragtime. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz" ] ;
+    :description "Musical genre" ;
+    :name "Jazz" .
+
+<kg:/m/03ct1v> a :ProductModel,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "The Fender Jazzmaster is an electric guitar designed as a more expensive sibling of the Fender Stratocaster. First introduced at the 1958 NAMM Show, it was initially marketed to jazz guitarists, but found favor among surf rock guitarists in the early 1960s. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Fender_Jazzmaster" ] ;
+    :description "Bass guitar" ;
+    :name "Fender Jazzmaster" .
+
+<kg:/m/03mf28v> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Ralph Joshua Dela Cruz Dionisio is a former Filipino actor. He is best known for his role in Ken Pamintuan in Super Inggo and the young Cholo in the Philippine remake of Stairway to Heaven." ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Joshua_Dionisio" ] ;
+    :description "Filipino actor" ;
+    :name "Joshua Dionisio" ;
+    :url "http://joshuadionisio.tk/" .
+
+<kg:/m/03mwyn> a :Thing,
+        :TouristAttraction ;
+    goog:detailedDescription [ :articleBody "The New Orleans Jazz &amp; Heritage Festival is an annual celebration of local music and culture held at the Fair Grounds Race Course in New Orleans, Louisiana. Jazz Fest attracts thousands of visitors to New Orleans each year. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/New_Orleans_Jazz_&_Heritage_Festival" ] ;
+    :description "Musical fair" ;
+    :name "New Orleans Jazz &amp; Heritage Festival" ;
+    :url "http://www.nojazzfest.com/" .
+
+<kg:/m/041pr> a :Thing ;
+    goog:detailedDescription [ :articleBody "Jazz dance is a performance dance and style that arose in the United States in the mid 20th century. Jazz dance may allude to vernacular jazz about to Broadway or dramatic jazz. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_dance" ] ;
+    :name "Jazz dance" .
+
+<kg:/m/043r8> a :Thing ;
+    goog:detailedDescription [ :articleBody "The term jazz guitar may refer to either a type of electric guitar or to the variety of guitar playing styles used in the various genres which are commonly termed \"jazz\". " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_guitar" ] ;
+    :description "Musical instrument" ;
+    :name "Jazz guitar" .
+
+<kg:/m/048j51> a :ProductModel,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "The Fender Jazz Bass is the second model of electric bass created by Leo Fender. It is distinct from the Precision Bass in that its tone is brighter and richer in the midrange and treble with less emphasis on the fundamental frequency. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Fender_Jazz_Bass" ] ;
+    :description "Bass guitar" ;
+    :name "Fender Jazz Bass" .
+
+<kg:/m/04_18s> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Jasmin St. Claire is an American former pornographic actress. She is also known for her work as a professional wrestling personality, most notably for ECW. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jasmin_St._Claire" ] ;
+    :description "American former pornographic film actor" ;
+    :name "Jasmin St. Claire" .
+
+<kg:/m/04g46m> a :BroadcastChannel,
+        :RadioStation,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "KBEM-FM is a Minneapolis, Minnesota public radio station broadcasting a jazz format. The station is operated by the Minneapolis public school system and has been partnering since 1989 with the Minnesota Department of Transportation, providing traffic congestion reports for commuters in the Minneapolis-St. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/KBEM-FM" ] ;
+    :description "Radio station" ;
+    :name "KBEM-FM" .
+
+<kg:/m/04s1vf> a :Thing ;
+    goog:detailedDescription [ :articleBody "Designation Jazz is a fictional robot character from the Transformers franchise. He is usually portrayed as a music-loving robot that speaks using American ebonics. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_(Transformers)" ] ;
+    :description "Fictional character" ;
+    :name "Jazz" .
+
+<kg:/m/04wt_m> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Donald Christopher Barber OBE was an English jazz musician, best known as a bandleader and trombonist. As well as scoring a UK top twenty trad jazz hit with \"Petite Fleur\" in 1959, he helped the careers of many musicians. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Chris_Barber" ] ;
+    :description "Jazz musician" ;
+    :name "Chris Barber" .
+
+<kg:/m/054fk7> a :Person,
+        :Thing ;
+    :description "Singer" ;
+    :name "Larry \"Jazz\" Anthony" .
+
+<kg:/m/056dsk> a :MusicGroup,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "OK Jazz, later renamed TPOK Jazz, was a Congolese rumba band from the Democratic Republic of the Congo established in 1956 and fronted by Franco. The group disbanded in 1993, but reformed in 1996." ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/TPOK_Jazz" ] ;
+    :description "Band" ;
+    :name "TPOK Jazz" .
+
+<kg:/m/0649_y> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody """Viguen, known as "King of Iranian pop" and the "Sultan of Jazz", was an Iranian pop music singer and actor, well known throughout the Near East. Viguen sang both in Persian and Armenian.
+""" ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Viguen" ] ;
+    :description "Iranian singer" ;
+    :name "Vigen Derderian" .
+
+<kg:/m/064pmm9> a :ProductModel,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Roland Jazz Chorus is the name given to a series of solid-state instrument amplifiers produced by the Roland Corporation in Japan since 1975. Its name comes from its built-in analog chorus effect. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Roland_Jazz_Chorus" ] ;
+    :description "Instrument amplifier" ;
+    :name "Roland Jazz Chorus" .
+
+<kg:/m/06ch55> a :Thing ;
+    goog:detailedDescription [ :articleBody "Jazz piano is a collective term for the techniques pianists use when playing jazz. The piano has been an integral part of the jazz idiom since its inception, in both solo and ensemble settings. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_piano" ] ;
+    :name "Jazz piano" .
+
+<kg:/m/06zrgn> a :Corporation,
+        :Organization,
+        :Thing ;
+    goog:detailedDescription [ :articleBody """Jazzercise is a fitness franchise company founded by Judi Sheppard Missett in 1968 and headquartered in Carlsbad, California, United States. The franchise's name is a portmanteau of "jazz" and "exercise".
+Jazzercise combines dance, strength and resistance training with popular music for a full-body workout class. The company currently has over 8,300 franchisees worldwide in 32 countries.""" ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazzercise" ] ;
+    :description "Fitness company" ;
+    :name "Jazzercise" ;
+    :url "http://www.jazzercise.com/" .
+
+<kg:/m/0795_5> a :CreativeWork,
+        :Movie,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "The Jazz Singer is a 1980 American musical drama film directed by Richard Fleischer and produced by Jerry Leider. The film stars Neil Diamond, Sir Laurence Olivier and Lucie Arnaz, and tells the story of a young singer who is torn between tradition and pursuing his dreams as a pop singer. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/The_Jazz_Singer_(1980_film)" ] ;
+    :description "1980 film" ;
+    :name "The Jazz Singer" .
+
+<kg:/m/07ym47> a :Thing ;
+    goog:detailedDescription [ :articleBody "Jazz-funk is a subgenre of jazz music characterized by a strong back beat, electrified sounds and an early prevalence of analog synthesizers. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz-funk" ] ;
+    :description "Musical style" ;
+    :name "Jazz-funk" .
+
+<kg:/m/082yz0> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Lam Tsz-sin is a Hong Kong actor." ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Lam_Tsz-sin" ] ;
+    :description "Actor" ;
+    :name "Jazz Lam" .
+
+<kg:/m/08bs5> a :Event,
+        :Thing ;
+    goog:detailedDescription [ :articleBody """The 1920s was a decade of the Gregorian calendar that began on January 1, 1920, and ended on December 31, 1929.
+In America, it is frequently referred to as the "Roaring Twenties" or the "Jazz Age", while in Europe the period is sometimes referred to as the "Golden Twenties" because of the economic boom following World War I. """ ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/1920s" ] ;
+    :name "1920s" .
+
+<kg:/m/09g9ghs> a :BroadcastChannel,
+        :RadioStation,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "KUWL is a jazz radio station licensed to Laramie, Wyoming, United States. The station is part of Wyoming Public Radio, a division of Wyoming Public Media. It serves the Laramie area and is currently owned by University of Wyoming. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/KUWL" ] ;
+    :description "Radio station" ;
+    :name "KUWL" .
+
+<kg:/m/09glkyk> a :Thing ;
+    goog:detailedDescription [ :articleBody """A jazz shoe is a type of shoe worn by dancers. They are used in jazz dance and other styles of dance including acro dance, acrobatic rock'n'roll, and hip hop, and in other activities, such as aerobics.
+""" ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_shoe" ] ;
+    :name "Jazz shoe" .
+
+<kg:/m/09xw2> a :Thing ;
+    goog:detailedDescription [ :articleBody "Dixieland, sometimes referred to as traditional jazz, is a style of jazz based on the music that developed in New Orleans at the start of the 20th century. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Dixieland" ] ;
+    :description "Musical style" ;
+    :name "Dixieland" .
+
+<kg:/m/0byxhp> a :BroadcastChannel,
+        :Corporation,
+        :Organization,
+        :RadioStation,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Jazz FM is a radio station broadcasting on digital radio in the United Kingdom and Malta which predominantly plays jazz music, jazz standards as well as blues and soul music. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_FM_(UK)" ] ;
+    :description "Radio station" ;
+    :name "Jazz FM" ;
+    :url "http://www.jazzfm.com/" .
+
+<kg:/m/0d4dbk> a :MusicGroup,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Jazztronik is a Japanese music group by the Tokyo-based DJ/producer/pianist Ryota Nozaki, that does not have fixed members. Jazztronik has released two albums and two EPs since 1998 on label Flower Records. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazztronik" ] ;
+    :description "Musical group" ;
+    :name "Jazztronik" ;
+    :url "http://www.jazztronik.com/" .
+
+<kg:/m/0d9xq> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Ella Jane Fitzgerald was an American jazz singer, sometimes referred to as the \"First Lady of Song\", \"Queen of Jazz\", and \"Lady Ella\". " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Ella_Fitzgerald" ] ;
+    :description "American jazz singer" ;
+    :name "Ella Fitzgerald" ;
+    :url "http://www.ellafitzgerald.com/" .
+
+<kg:/m/0f6md> a :Thing ;
+    goog:detailedDescription [ :articleBody """A jazz band is a musical ensemble that plays jazz music. Jazz bands vary in the quantity of its members and the style of jazz that they play but it is common to find a jazz band made up of a rhythm section and a horn section.
+""" ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_band" ] ;
+    :description "Musical style" ;
+    :name "Jazz band" .
+
+<kg:/m/0fnzw3> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody """Jarryd Lee Hayne is a former professional rugby league footballer who also briefly played American football and rugby union sevens.
+Hayne began his career in 2006 as a winger for the Parramatta Eels, winning the NRL's Dally M Rookie of the Year award. """ ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jarryd_Hayne" ] ;
+    :description "Rugby league fullback" ;
+    :name "Jarryd Hayne" .
+
+<kg:/m/0fpwh> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Anita Belle Colton, known professionally as Anita O'Day, was an American jazz singer and self proclaimed “song stylist” widely admired for her sense of rhythm and dynamics, and her early big band appearances that shattered the traditional image of the \"girl singer\". " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Anita_O'Day" ] ;
+    :description "American singer" ;
+    :name "Anita O'Day" ;
+    :url "http://www.anitaoday.com/" .
+
+<kg:/m/0g6m5f> a :Brand,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Diet Pepsi Jazz is a brand of soda introduced by the Pepsi company in 2006 and discontinued in 2009. It was a specifically named variant of Pepsi's popular Diet Pepsi product, combining several different flavors. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_(soft_drink)" ] ;
+    :name "Jazz" .
+
+<kg:/m/0g768> a :Corporation,
+        :Organization,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Atlantic Recording Corporation is an American record label founded in October 1947 by Ahmet Ertegun and Herb Abramson. Over its first 20 years of operation, Atlantic earned a reputation as one of the most important American labels, specializing in jazz, R&amp;B, and soul by Aretha Franklin, Ray Charles, Wilson Pickett, Sam and Dave, Ruth Brown and Otis Redding. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Atlantic_Records" ] ;
+    :description "Record label" ;
+    :name "Atlantic Records" ;
+    :url "http://www.atlanticrecords.com/" .
+
+<kg:/m/0g_9k> a :Thing ;
+    goog:detailedDescription [ :articleBody "Modal jazz is jazz that makes use of musical modes often modulating among them to accompany the chords instead of relying on one tonal center used across the piece. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Modal_jazz" ] ;
+    :name "Modal jazz" .
+
+<kg:/m/0gfjnbp> a :BroadcastChannel,
+        :RadioStation,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Radio Jazz FM is a jazz radio station in Bulgaria that started in 2001. It is part of BTV Media Group, which is owned by Central European Media Enterprises. From 2001 to 2006 it aired in Plovdiv, Varna, Burgas, Blagoevgrad, Ruse, Stara Zagora, and Sofia. From its first years it aired special projects with Radio Net and Sport Radio. Starting in 2005 the radio aired the Doiche Vele news. In 2006 the radio was replaced in all cities, except Sofia, by N-JOY." ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_FM_(Bulgaria)" ] ;
+    :description "Radio station" ;
+    :name "Jazz FM" .
+
+<kg:/m/0gg77mf> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Michael Collins Ajereh, known professionally as Don Jazzy, is a Nigerian record producer, Brand Ambassador, audio engineer, record executive, singer, entrepreneur, Influencer and Comedian. He is the founder and the CEO of Mavin Records. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Don_Jazzy" ] ;
+    :description "Nigerian record producer" ;
+    :name "Don Jazzy" ;
+    :url "http://mavinrecords.com/" .
+
+<kg:/m/0gz8z_> a :Thing ;
+    goog:detailedDescription [ :articleBody "Gypsy jazz is a style of small-group jazz originating from the Romani guitarist Jean \"Django\" Reinhardt, in conjunction with the French swing violinist Stéphane Grappelli, as expressed in their group the Quintette du Hot Club de France. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Gypsy_jazz" ] ;
+    :name "Gypsy jazz" .
+
+<kg:/m/0h3whhc> a :Corporation,
+        :Organization,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Fanzz is a sports apparel and team gear retailer based in Salt Lake City, Utah. Fanzz began operations in 1985. Fanzz/Just Sports currently has approximately 85 retail store locations in many US states. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Fanzz" ] ;
+    :description "Company" ;
+    :name "Fanzz" ;
+    :url "http://www.fanzz.com" .
+
+<kg:/m/0h67hwx> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Atiwit \"Jazz\" Janewattananond is a Thai professional golfer who plays on both the Asian and European Tours." ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_Janewattananond" ] ;
+    :description "Thai golfer" ;
+    :name "Jazz Janewattananond" .
+
+<kg:/m/0hv1t> a :CreativeWork,
+        :Movie,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "All That Jazz is a 1979 American musical drama film directed by Bob Fosse. The screenplay, by Robert Alan Aurthur and Fosse, is a semi-autobiographical fantasy based on aspects of Fosse's life and career as a dancer, choreographer and director. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/All_That_Jazz_(film)" ] ;
+    :description "1979 film" ;
+    :name "All That Jazz" .
+
+<kg:/m/0hvcr> a :CreativeWork,
+        :Movie,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "The Jazz Singer is a 1927 American musical drama film directed by Alan Crosland. It is notable as the first feature-length motion picture with both synchronized recorded music score as well as lip-synchronous singing and speech. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/The_Jazz_Singer" ] ;
+    :description "1927 film" ;
+    :name "The Jazz Singer" .
+
+<kg:/m/0jmhr> a :Organization,
+        :SportsTeam,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "The Utah Jazz are an American professional basketball team based in Salt Lake City. The Jazz compete in the National Basketball Association as a member of the league's Western Conference, Northwest Division. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Utah_Jazz" ] ;
+    :description "Basketball team" ;
+    :name "Utah Jazz" ;
+    :url "http://www.nba.com/jazz/" .
+
+<kg:/m/0p9xd> a :Thing ;
+    goog:detailedDescription [ :articleBody "Free jazz is an experimental approach to jazz improvisation that developed in the late 1950s and early 1960s when musicians attempted to change or break down jazz conventions, such as regular tempos, tones, and chord changes. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Free_jazz" ] ;
+    :name "Free jazz" .
+
+<kg:/m/0r4r9n7> a :Organization,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "TSF Jazz, previously known as TSF 89.9, is a jazz radio station in Paris, France, that was started in 1999 and owned by Nova Press. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/TSF_Jazz" ] ;
+    :description "Radio network" ;
+    :name "TSF Jazz" .
+
+<kg:/m/0vpdct5> a :Person,
+        :Thing ;
+    :description "Actress" ;
+    :name "Tae Heckard" .
+
+<kg:/m/0vx0z8p> a :Person,
+        :Thing ;
+    :description "Actor" ;
+    :name "Jazz Chuanchuen" .
+
+<kg:/m/0yn_49l> a :ProductModel,
+        :Thing ;
+    goog:detailedDescription [ :articleBody """Jazz is a perfume for men by Yves Saint Laurent introduced in 1988. The black and white packaging and flacon were designed to resemble piano keys.
+A flanker Live Jazz was introduced in 1998.""" ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_(perfume)" ] ;
+    :name "Jazz" .
+
+[] a :ItemList ;
+    :itemListElement [ a goog:EntitySearchResult ;
+            goog:resultScore 9.343474e+01 ;
+            :result <kg:/m/026b8p> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.549097e+01 ;
+            :result <kg:/g/11fy4cjf4n> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.271526e+02 ;
+            :result <kg:/g/11j2xgpq6l> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.077151e+02 ;
+            :result <kg:/m/0hvcr> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.101058e+02 ;
+            :result <kg:/m/02b667> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.26588e+02 ;
+            :result <kg:/m/01kpv04> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.489817e+02 ;
+            :result <kg:/m/0hv1t> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.12486e+02 ;
+            :result <kg:/m/0649_y> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 3.719279e+02 ;
+            :result <kg:/m/0fnzw3> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.033023e+02 ;
+            :result <kg:/m/09xw2> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.835027e+02 ;
+            :result <kg:/m/0r4r9n7> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 2.499615e+02 ;
+            :result <kg:/m/041pr> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 7.004062e+01 ;
+            :result <kg:/m/02x13zt> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.237079e+02 ;
+            :result <kg:/g/11b7rcyfj2> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.973928e+01 ;
+            :result <kg:/g/11b8symyn1> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 3.425771e+02 ;
+            :result <kg:/m/0d9xq> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 7.628461e+01 ;
+            :result <kg:/g/121rpsf_> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.604753e+03 ;
+            :result <kg:/m/02phqpy> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.850781e+02 ;
+            :result <kg:/m/06zrgn> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.163806e+02 ;
+            :result <kg:/m/03mwyn> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.214837e+02 ;
+            :result <kg:/m/01n4bh> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 8.968823e+01 ;
+            :result <kg:/m/0d4dbk> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.383192e+01 ;
+            :result <kg:/m/0fpwh> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 5.595331e+03 ;
+            :result <kg:/m/03_d0> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 7.485661e+01 ;
+            :result <kg:/g/11h3lgdrx9> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.218513e+02 ;
+            :result <kg:/m/03ct1v> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 8.191752e+02 ;
+            :result <kg:/m/0h3whhc> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 2.950306e+02 ;
+            :result <kg:/m/03mf28v> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.050534e+02 ;
+            :result <kg:/m/01k9wl> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.582987e+02 ;
+            :result <kg:/g/1q2xhgq_x> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.374403e+02 ;
+            :result <kg:/m/018j3w> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.677469e+01 ;
+            :result <kg:/m/02rzq62> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 3.038194e+02 ;
+            :result <kg:/g/11b81x8rg6> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.642293e+02 ;
+            :result <kg:/m/0g768> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.636989e+02 ;
+            :result <kg:/m/02r1b17> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 9.989712e+01 ;
+            :result <kg:/m/064pmm9> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.305799e+01 ;
+            :result <kg:/m/0795_5> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.386561e+02 ;
+            :result <kg:/g/11h4nhh4h8> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 7.718259e+01 ;
+            :result <kg:/m/02vpxb0> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 3.147818e+02 ;
+            :result <kg:/m/01hdjlk> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.117268e+02 ;
+            :result <kg:/m/0gg77mf> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 9.45218e+01 ;
+            :result <kg:/m/04g46m> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.746765e+02 ;
+            :result <kg:/g/11hb69dddz> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.621255e+01 ;
+            :result <kg:/m/04wt_m> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.05097e+02 ;
+            :result <kg:/m/01bwdt> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.118499e+02 ;
+            :result <kg:/m/0vx0z8p> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 7.525727e+01 ;
+            :result <kg:/m/02rxbck> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 9.850062e+01 ;
+            :result <kg:/m/0p9xd> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 7.842376e+01 ;
+            :result <kg:/g/11f2656wnd> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.625025e+01 ;
+            :result <kg:/m/0g_9k> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.854389e+02 ;
+            :result <kg:/m/08bs5> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.26918e+01 ;
+            :result <kg:/m/03_9vr> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.786588e+01 ;
+            :result <kg:/m/056dsk> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.641738e+02 ;
+            :result <kg:/m/06ch55> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 2.028097e+02 ;
+            :result <kg:/m/01fh36> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.511234e+02 ;
+            :result <kg:/m/0f6md> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.971459e+02 ;
+            :result <kg:/m/054fk7> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.370218e+03 ;
+            :result <kg:/m/0jmhr> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 2.506918e+02 ;
+            :result <kg:/m/037n97> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.862971e+02 ;
+            :result <kg:/m/01ppfv> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.342051e+01 ;
+            :result <kg:/m/0gfjnbp> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 3.292256e+02 ;
+            :result <kg:/g/11c6h14k47> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.466307e+02 ;
+            :result <kg:/m/04s1vf> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 5.812772e+02 ;
+            :result <kg:/m/0vpdct5> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 2.36552e+02 ;
+            :result <kg:/m/0h67hwx> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 4.337624e+02 ;
+            :result <kg:/m/0147dk> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.350429e+02 ;
+            :result <kg:/m/07ym47> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 8.176716e+01 ;
+            :result <kg:/m/09g9ghs> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.546664e+02 ;
+            :result <kg:/m/027z2cl> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 9.694527e+01 ;
+            :result <kg:/g/1s05p2fm1> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.554258e+02 ;
+            :result <kg:/m/0byxhp> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.247456e+02 ;
+            :result <kg:/g/1q5j3hf0c> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 7.162895e+01 ;
+            :result <kg:/g/11f26949jn> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.020233e+02 ;
+            :result <kg:/m/027vsf5> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 8.85025e+01 ;
+            :result <kg:/m/0g6m5f> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.228719e+02 ;
+            :result <kg:/m/01cd2k> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 7.20584e+01 ;
+            :result <kg:/m/01f9y_> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.467392e+02 ;
+            :result <kg:/m/0gz8z_> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 9.477221e+01 ;
+            :result <kg:/m/01mzvc> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 4.989892e+02 ;
+            :result <kg:/g/11fkqbxmwv> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 9.055891e+02 ;
+            :result <kg:/m/09glkyk> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.071285e+01 ;
+            :result <kg:/m/082yz0> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.197041e+02 ;
+            :result <kg:/m/010fwz69> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 7.032909e+01 ;
+            :result <kg:/m/01vw77> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.419975e+01 ;
+            :result <kg:/m/01cx4t> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.216314e+03 ;
+            :result <kg:/m/01vsdgg> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 9.317786e+01 ;
+            :result <kg:/m/02vrfqt> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 7.87024e+01 ;
+            :result <kg:/m/039fjd> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.576759e+02 ;
+            :result <kg:/m/02bh3_> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 2.089415e+02 ;
+            :result <kg:/g/11g10jq09w> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 4.092773e+02 ;
+            :result <kg:/m/04_18s> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.654171e+02 ;
+            :result <kg:/m/048j51> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 7.931573e+01 ;
+            :result <kg:/m/01sll7r> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.577803e+02 ;
+            :result <kg:/m/01smqh> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.384074e+02 ;
+            :result <kg:/m/043r8> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 8.515712e+01 ;
+            :result <kg:/m/01p_2p> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 2.457337e+02 ;
+            :result <kg:/m/0283v86> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 2.063269e+03 ;
+            :result <kg:/m/01vw20h> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 9.42971e+01 ;
+            :result <kg:/m/0yn_49l> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.036195e+02 ;
+            :result <kg:/m/01l39h> ] .
+
