@@ -127,7 +127,7 @@ def get_user():
     return resp
 
 
-@rest.route('/rest/logout', methods=['POST'])
+@rest.route('/rest/logout', methods=['GET'])
 def logout():
     if not current_user.is_authenticated:
         resp = jsonify({'message': 'Login first'})
@@ -290,3 +290,13 @@ def recommendation(type):
         resp = jsonify({'message': 'Incorrect params'})
         resp.status_code = 400
         return resp
+
+
+@rest.route('/rest/search/<topic>', methods=['GET'])
+def recommendation(topic):
+    if not current_user.is_authenticated:
+        resp = jsonify({'message': 'Login first'})
+        resp.status_code = 400
+        return resp
+    # add search call
+    pass
