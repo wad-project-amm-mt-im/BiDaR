@@ -1,0 +1,28 @@
+version: '2'
+services:
+  web:
+    container_name: viz_service
+    image: vizualize
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+    ports:
+      - 5002:5000
+    command: python vizualization_service.py -h 0.0.0.0
+    depends_on:
+      - worker
+
+  worker:
+    image: converter_micro
+    container_name: converter_micro-worker
+    build:
+      context: ./converter_micro_service/
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+    ports:
+      - 5003:5000
+    command: python ./converter_ms.py -h 0.0.0.0
+    
