@@ -1,0 +1,300 @@
+openapi: 3.0.0
+
+info:
+  title: "bidar"
+  description: "This is our OpenAPI doc"
+  version: "1.0.0"
+
+servers:
+    - url : localhost
+
+paths:
+  /rest/login:
+    description: log in a user
+    post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  example: ana@web.ro
+                password:
+                  type: string
+                  example: hashed string
+      responses:
+        201:
+          description: "Log in succesfully"
+        400:
+          description: "Bad Request - invalid credentials"
+  /rest/register:
+    description: register a user
+    
+    post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  example: ana@web.ro
+                password:
+                  type: string
+                  example: hashed string
+                name:
+                  type: string
+                  example: ana
+                date:
+                  type: string
+                  example: 1998-03-24
+                gender:
+                  type: string
+                  example: female
+                state:
+                  type: string
+                  example: Romania
+      responses:
+        201:
+          description: "User registered"
+        400:
+          description: "Bad Request - wrong parameters!"
+  
+  /userprofile/info_update:
+    description: modify user information
+    put:
+      parameters:
+        - in: query
+          name: info_update
+          required: true
+          schema:
+              type: array
+              items:
+                properties:
+                  email:
+                    type: object
+                    properties:
+                      from:
+                        type: string
+                        example: ana@web.ro
+                      to:
+                        type: string
+                        example: maria@web.ro
+                  password:
+                    type: string
+                    properties:
+                      from:
+                        type: string
+                        example: hashed string
+                      to:
+                        type: string
+                        example: hashed string changed
+                  name:
+                    type: string
+                    properties:
+                      from:
+                        type: string
+                        example: ana
+                      to:
+                        type: string
+                        example: maria
+                  date:
+                    type: string
+                    properties:
+                      from:
+                        type: string
+                        example: 1998-03-23
+                      to:
+                        type: string
+                        example: 21-03-1999
+                  gender:
+                    type: string
+                    properties:
+                      from:
+                        type: string
+                        example: female
+                      to:
+                        type: string
+                        example:  male
+                  state:
+                    type: string
+                    properties:
+                      from:
+                        type: string
+                        example: Romania
+                      to:
+                        type: string
+                        example: Italia
+      responses:
+        201:
+          description: "User ana updated"
+        400:
+          description: "Bad Request - wrong parameters!"
+          
+  /rest/interests:
+    description: GET, POST, DELETE interest for a user
+    get:
+      responses:
+        200:
+          description: "Success"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    interests:
+                      type: string
+                      example: music
+        400:
+          description: "Login first!"              
+    post:
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: string
+              example: sports
+      responses:
+        201:
+          description: "Interest added!"
+        400:
+          description: "Login first!"   
+    delete:
+      parameters:
+        - in: query
+          name: interests
+          required: true
+          schema:
+            type: object
+            properties:
+              interest:
+                type: string
+                example: sports
+      responses:
+        200:
+          description: "Interest deleted!"
+        400:
+          description: "Login first!"
+                
+  /rest/demographics/{service}:
+    description: Get multiple statistics about gemographics
+    post:
+      parameters:
+        - in: path
+          name: service
+          description: "type of service"
+          required: true
+          schema:
+            type: string
+            example: stackplot, lineplot, pieplot, min , max, avg
+        - in: query
+          name: coutries
+          required: true
+          schema:
+            type: array
+            items:
+              properties:
+                countries:
+                  type: string
+                  example: Romania
+      responses:
+        201:
+          description: "Success"
+          content:
+            image/png:
+              example: plot.png
+        400:
+         description: "Wrong parameters"
+  
+  /rest/games/{service_type}:
+    description: Get games statistics per countries/continents
+    get:
+      parameters:
+          - in: path
+            name: service_type
+            required: true
+            schema:
+                type: string
+                example: continents
+      responses:
+        200:
+          description: "Success"
+          content:
+            image/svg+xml:
+             example: plot.svg
+             
+  /rest/games/compare:
+    description: See multiple statistics about gemographics
+    post:
+      parameters:
+        - in: query
+          name: coutries
+          required: true
+          schema:
+            type: array
+            items:
+              properties:
+                countries:
+                  type: string
+                  example: Romania
+      responses:
+        201:
+          description: "Success"
+          content:
+            image/png:
+              example: plot.png
+        400:
+         description: "Wrong parameters"
+  
+  /rest/recommendations/{type}:
+    description: See recommandations based on ingredients 
+    post:
+      parameters:
+        - in: path
+          name: type
+          description: "type of visualisation"
+          required: true
+          schema:
+            type: string
+            example: table, cloud
+        - in: query
+          name: ingredients
+          required: true
+          schema:
+            type: array
+            items:
+              properties:
+                countries:
+                  type: string
+                  example: onion
+      responses:
+        201:
+          description: "Success"
+          content:
+            image/png:
+              example: plot.png
+        400:
+         description: "Wrong parameters"
+         
+  /rest/search/{topic}:
+    description: Get rdf representation for a topic
+    get:
+      parameters:
+          - in: path
+            name: topic
+            required: true
+            schema:
+                type: string
+                example: car
+      responses:
+        200:
+          description: "Success"
+          content:
+            image/svg+xml:
+             example: plot.svg
+  
+            

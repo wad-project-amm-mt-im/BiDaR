@@ -1,0 +1,28 @@
+body {
+	max-width: 21cm;
+	margin: auto;
+	line-height: 1.6;
+	font-weight: 300;
+	font-family: sans-serif;
+}
+
+
+.image {
+   width: 840px;
+   height: 450px;
+}
+
+.image-small {
+   width: 840px;
+   height: 250px;
+}
+
+
+.image-h {
+   width: 840px;
+   height: 650px;
+}
+
+figcaption {
+   text-align: center;
+}

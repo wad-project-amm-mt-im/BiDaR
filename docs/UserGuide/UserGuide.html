@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>BiDaR (Big Data Retrival) User Documentation</title>
+    <link rel="stylesheet" href="userguide.css">
+</head>
+<body prefix="schema: http://schema.org">
+    <article typeof="schema:ScholarlyArticle" resource="#">
+        <header>
+            <h1 property="schema:name"> BiDaR User Documentation
+            </h1>
+        </header>
+        <div role="contentinfo">
+            <dl>
+                <dt>Authors</dt>
+                <dd>
+                    Team: Bumbu Ana-Maria, Manolache Irinel, Manoleasa Tudor
+                </dd>
+            </dl>
+        </div>
+        <section typeof="sa:content" id="content">
+            <h2>Content</h2>
+            <aside typeof="schema:WPSideBar">
+                <ol>
+                    <li>
+                        <a href="#introduction">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="#website">Using the website</a>
+                    </li>
+                    <li>
+                        <a href="#rest-api">Using the REST API</a>
+                    </li>
+                </ol>
+            </aside>
+        </section>
+        <section typeof="sa:Results" id="introduction">
+            <h2>1. Introduction</h2>
+            <h3>About BiDaR</h3>
+            <blockquote>
+                <p>
+				 BiDaR stands for Big Data Retrieval. It is a smart micro-service-based web system that is able to retrieve information from Wikidata in multiple formats. BiDaR offers four main functionalities, search for a topic, visualization of demographics statistics per countries, a recommendation system for receipts base on user ingredients and statistics about all games played around the world. The main gamesoal is to create complex SPARQL queries for different areas of interest.
+                </p>
+            </blockquote>
+        </section>
+
+        <section typeof="sa:Results" id="website">
+            <h2>2. Using the website</h2>
+	  	    <h3>Login and register page</h3>
+	  	    <blockquote>
+	  	    	<p>
+	             To use BiDaR you need to login with email and password if an account already exists, if not than you need to create one on register page. The register page can be accessed by clicking register button.
+	            </p>
+	        </blockquote>
+	            <figure typeof="sa:Image">
+	                <img class="image" src="login.png">
+	                <figcaption>
+	                    Login Page
+	                </figcaption>
+	            </figure>
+	        <blockquote>
+	        	<p>
+		    	 For registration there are a few detalis that need to be filled like email address, password, name, gender, birthday and state. Remember that email is unique in our system, so you can't add an email already used and all fields need to be compeleted. 
+		       </p>
+		    </blockquote>
+	            <figure typeof="sa:Image">
+	                <img class="image" src="register.png">
+	                <figcaption>
+	                    Register Page
+	                </figcaption>
+	            </figure>
+
+	        <h3>Profile page</h3>
+	        <blockquote>
+	        	<p>
+		    	 All the details filled by user can be seen in profile page, where also can be updated by changing the values from every text box and sent them via update button. Also, in this page an user can add a topic of interest from the dropdown list with the add button and can delete a topic by pressing the label with the name of interest.
+		       </p>
+		    </blockquote>
+	            <figure typeof="sa:Image">
+	                <img class="image" src="profile.png">
+	                <figcaption>
+	                    Profile Page
+	                </figcaption>
+	            </figure>
+
+	        <h3>Search page</h3>
+	        <blockquote>
+	        	<p>
+		    	 In this page you can type a topic into search bar and vizualize the rdf graph resulted. Also the rdf result can pe downloaded in any format choosed from list by pressing the download button.
+		       </p>
+		    </blockquote>
+	            <figure typeof="sa:Image">
+	                <img class="image" src="search.png">
+	                <figcaption>
+	                    Search Page
+	                </figcaption>
+	            </figure>
+
+	        <h3>Recommender page</h3>
+	        <blockquote>
+	        	<p>
+		    	 An user need to choose from the ingredient list one or more ingredients to receive a recommendation. This can be visualized like a table if user clicked on Get Recommendation button or like an image in Word Cloud format when the button "Word Cloud" is pressed.
+		       </p>
+		    </blockquote>
+		    <div>
+	            <figure typeof="sa:Image">
+	                <img class="image" src="recommendation2.png">
+	                <figcaption>
+	                    Example of Word Cloud Visualisation for ingredients onion, chicken, garlic
+	                </figcaption>
+	            </figure>
+	             <figure typeof="sa:Image">
+	                <img class="image" src="recommendation1.png">
+	                <figcaption>
+	                    Table Recommendation for ingredients onion, chicken, garlic
+	                </figcaption>
+	            </figure>
+			</div>
+
+			<h3>Demographics page</h3>
+	        <blockquote>
+	        	<p>
+		    	 Demographics page offers six funtionalities, for all of them you need to choose first countries that are you interested in from first dropdown list. In second dropdown are two services "Population, life expectancy, HDI" and "Fertility, democracy, life expectancy", based on what user choose from this list the third dropdwon will update. If the first service is choosed then in third list will appear these three information: "Population throughout years" which shows a stack plot, "Life expectancy throughout years" which returns a lineplot and "HDI" which shows a pieplot. If the second service is choosed then, from the third dropdown list, the user will have to pick between maximum, minimum and average options. Also under this list will appear three text boxes where the user should introduce a value to compare each parameter.
+		       </p>
+		    </blockquote>
+	        <div>
+	            <figure typeof="sa:Image">
+	                <img class="image-small" src="demographics1.png">
+	                <figcaption>
+	                    Demographics service 1
+	                </figcaption>
+	            </figure>
+	             <figure typeof="sa:Image">
+	                <img class="image-small" src="demographics2.png">
+	                <figcaption>
+	                    Demographics service 2
+	                </figcaption>
+	            </figure>
+			</div>
+
+			 <h3>Games page</h3>
+	        <blockquote>
+	        	<p>
+		    	 As user you can see in this page three statistics: the distribution of games per countries, the distribution of games per continents, and comparation of games between two countries. Also, exists two lists one with counties and one with continents that allow user to exclude the selected ones from statistics. 
+		       </p>
+		    </blockquote>
+	            <figure typeof="sa:Image">
+	                <img class="image-small" src="games.png">
+	                <figcaption>
+	                    Games
+	                </figcaption>
+	            </figure>
+
+	        </section>
+
+	        <section typeof="sa:Results" id="rest-api">
+	        <h2>3. Using the REST API</h2>
+	        <blockquote>
+	            <p>
+	              BiDaR offers a REST API, which follows the OpenAPI Specification providing access to our functionalities. This API can be use if an user is authenticated and this can be done by a POST call with parameters email and password at '/rest/login'.
+	              All the endponints are:
+	            </p>
+	        </blockquote>
+	            <figure typeof="sa:Image">
+	                <img class="image-h" src="rest.png">
+	                <figcaption>
+	                    REST API
+	                </figcaption>
+	            </figure>
+	        <blockquote>
+	            <p>
+	             You can visualize a get request to our REST endpoint for statistic about games per continents.
+	            </p>
+	        </blockquote>
+	            <figure typeof="sa:Image">
+	                <img class="image" src="gamesexample.png">
+	                <figcaption>
+	                    REST request example
+	                </figcaption>
+	            </figure>
+            </section>
+    </article>
+</body>
+</html>
