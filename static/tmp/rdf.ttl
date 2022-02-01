@@ -57,13 +57,23 @@ Jazztel p.l.c. is listed on the Spanish Nuevo Mercado since December 18, 2000. "
     :name "Jazztel" ;
     :url "http://www.jazztel.com/" .
 
-<kg:/m/04_18s> a :Person,
-        :Thing ;
-    goog:detailedDescription [ :articleBody "Jasmin St. Claire is an American former pornographic actress. She is also known for her work as a professional wrestling personality, most notably for ECW. " ;
+<kg:/m/03_d0> a :Thing ;
+    goog:detailedDescription [ :articleBody "Jazz is a music genre that originated in the African-American communities of New Orleans, Louisiana, United States, in the late 19th and early 20th centuries, with its roots in blues and ragtime. " ;
             :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
-            :url "https://en.wikipedia.org/wiki/Jasmin_St._Claire" ] ;
-    :description "American former pornographic film actor" ;
-    :name "Jasmin St. Claire" .
+            :url "https://en.wikipedia.org/wiki/Jazz" ] ;
+    :description "Musical genre" ;
+    :name "Jazz" .
+
+<kg:/m/06zrgn> a :Corporation,
+        :Organization,
+        :Thing ;
+    goog:detailedDescription [ :articleBody """Jazzercise is a fitness franchise company founded by Judi Sheppard Missett in 1968 and headquartered in Carlsbad, California, United States. The franchise's name is a portmanteau of "jazz" and "exercise".
+Jazzercise combines dance, strength and resistance training with popular music for a full-body workout class. The company currently has over 8,300 franchisees worldwide in 32 countries.""" ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazzercise" ] ;
+    :description "Fitness company" ;
+    :name "Jazzercise" ;
+    :url "http://www.jazzercise.com/" .
 
 <kg:/m/09glkyk> a :Thing ;
     goog:detailedDescription [ :articleBody """A jazz shoe is a type of shoe worn by dancers. They are used in jazz dance and other styles of dance including acro dance, acrobatic rock'n'roll, and hip hop, and in other activities, such as aerobics.
@@ -71,15 +81,6 @@ Jazztel p.l.c. is listed on the Spanish Nuevo Mercado since December 18, 2000. "
             :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
             :url "https://en.wikipedia.org/wiki/Jazz_shoe" ] ;
     :name "Jazz shoe" .
-
-<kg:/m/0d9xq> a :Person,
-        :Thing ;
-    goog:detailedDescription [ :articleBody "Ella Jane Fitzgerald was an American jazz singer, sometimes referred to as the \"First Lady of Song\", \"Queen of Jazz\", and \"Lady Ella\". " ;
-            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
-            :url "https://en.wikipedia.org/wiki/Ella_Fitzgerald" ] ;
-    :description "American jazz singer" ;
-    :name "Ella Fitzgerald" ;
-    :url "http://www.ellafitzgerald.com/" .
 
 <kg:/m/0jmhr> a :Organization,
         :SportsTeam,
@@ -93,33 +94,33 @@ Jazztel p.l.c. is listed on the Spanish Nuevo Mercado since December 18, 2000. "
 
 [] a :ItemList ;
     :itemListElement [ a goog:EntitySearchResult ;
-            goog:resultScore 6.197041e+02 ;
-            :result <kg:/m/010fwz69> ],
-        [ a goog:EntitySearchResult ;
-            goog:resultScore 3.425771e+02 ;
-            :result <kg:/m/0d9xq> ],
-        [ a goog:EntitySearchResult ;
-            goog:resultScore 1.604753e+03 ;
-            :result <kg:/m/02phqpy> ],
-        [ a goog:EntitySearchResult ;
-            goog:resultScore 9.055891e+02 ;
-            :result <kg:/m/09glkyk> ],
-        [ a goog:EntitySearchResult ;
-            goog:resultScore 4.989892e+02 ;
-            :result <kg:/g/11fkqbxmwv> ],
-        [ a goog:EntitySearchResult ;
-            goog:resultScore 2.063269e+03 ;
-            :result <kg:/m/01vw20h> ],
-        [ a goog:EntitySearchResult ;
-            goog:resultScore 4.092773e+02 ;
-            :result <kg:/m/04_18s> ],
-        [ a goog:EntitySearchResult ;
-            goog:resultScore 6.370218e+03 ;
-            :result <kg:/m/0jmhr> ],
-        [ a goog:EntitySearchResult ;
             goog:resultScore 4.337624e+02 ;
             :result <kg:/m/0147dk> ],
         [ a goog:EntitySearchResult ;
             goog:resultScore 1.216314e+03 ;
-            :result <kg:/m/01vsdgg> ] .
+            :result <kg:/m/01vsdgg> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 4.989892e+02 ;
+            :result <kg:/g/11fkqbxmwv> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.850781e+02 ;
+            :result <kg:/m/06zrgn> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.604753e+03 ;
+            :result <kg:/m/02phqpy> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 2.063269e+03 ;
+            :result <kg:/m/01vw20h> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 5.595331e+03 ;
+            :result <kg:/m/03_d0> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.370218e+03 ;
+            :result <kg:/m/0jmhr> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 9.055891e+02 ;
+            :result <kg:/m/09glkyk> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.197041e+02 ;
+            :result <kg:/m/010fwz69> ] .
 

@@ -16,7 +16,7 @@ def get_query():
     if request.form.get('query'):
         querry = request.form.get('query')
         
-        service_url = 'http://34.242.40.157:5001/'
+        service_url = 'http://34.241.154.161:5001/'
         params = {
             'querry': querry,
             'limit': 10,
@@ -24,7 +24,7 @@ def get_query():
         url = service_url + '?' + urllib.parse.urlencode(params)
         result = urllib.request.urlopen(url).read().decode("utf-8")
         
-        service_url = 'http://34.242.40.157:5003/'
+        service_url = 'http://34.241.154.161:5003/'
         params = {
                 'rdf_content': result,
         }
@@ -32,7 +32,7 @@ def get_query():
         url = service_url + '?' + urllib.parse.urlencode(params)
         data_as_ttl = urllib.request.urlopen(url).read().decode("utf-8")
         #print(data_as_ttl)
-        service_url = 'http://34.242.40.157:5002/'
+        service_url = 'http://34.241.154.161:5002/'
         params = {
             'rdf_content': data_as_ttl,
         }
