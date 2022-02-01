@@ -27,7 +27,7 @@ def get_data_from_spark_service(pd_df: pd.DataFrame, option) -> dict:
     
     with open("df_received.json", "w") as f:
         f.write(pd_df.to_json())
-    service_url = 'http://34.242.40.157:5011/tasks'
+    service_url = 'http://34.250.193.11:5011/tasks'
     
     params = {
         'df_json': pd_df.to_json(),
