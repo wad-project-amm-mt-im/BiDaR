@@ -1,0 +1,125 @@
+@prefix : <http://schema.org/> .
+@prefix goog: <http://schema.googleapis.com/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<kg:/g/11fkqbxmwv> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Josiah Alan Brooks, known online as Jazza is an Australian YouTuber, artist, animator, and presenter best known for his art tutorials, challenges, and animations. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazza_(YouTuber)" ] ;
+    :description "Australian YouTuber" ;
+    :name "Jazza" .
+
+<kg:/m/010fwz69> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody """Daisy Jazz Isobel Ridley is an English actress, who rose to prominence for her role as Rey in the Star Wars sequel trilogy: The Force Awakens, The Last Jedi, and The Rise of Skywalker.
+""" ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Daisy_Ridley" ] ;
+    :description "Actress" ;
+    :name "Daisy Ridley" .
+
+<kg:/m/0147dk> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Willard Carroll Smith II, also known by his stage name The Fresh Prince, is an American actor, rapper, and film producer. Primarily known for comedic and dramatic acting roles, Smith is the recipient of numerous accolades, including four Grammy Awards, one Golden Globe Award, and two Academy Award nominations. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Will_Smith" ] ;
+    :description "American actor" ;
+    :name "Will Smith" ;
+    :url "http://www.willsmith.com/" .
+
+<kg:/m/01vsdgg> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Jeffrey Allen Townes, known professionally as DJ Jazzy Jeff, is an American DJ, record producer, and songwriter who was a member of DJ Jazzy Jeff &amp; the Fresh Prince with Will Smith. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/DJ_Jazzy_Jeff" ] ;
+    :description "American DJ" ;
+    :name "DJ Jazzy Jeff" ;
+    :url "http://www.djjazzyjeff.com/" .
+
+<kg:/m/01vw20h> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Shawn Corey Carter, known professionally as Jay-Z, is an American rapper, songwriter, record executive, entrepreneur, and media proprietor. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jay-Z" ] ;
+    :description "American rapper" ;
+    :name "JAY-Z" ;
+    :url "http://lifeandtimes.com/" .
+
+<kg:/m/02phqpy> a :Corporation,
+        :Organization,
+        :Thing ;
+    goog:detailedDescription [ :articleBody """Jazztel is a Spanish telecommunications company which offers triple play services. Jazztel was founded in 1998 by Martin Varsavsky. Jazztel is a Spanish company, owned by a British company called Jazztel p.l.c. It was incorporated under the laws of England and Wales in July 1998. It is Registered in England and Wales with Company Number 3597184. Its Registered Office is at 20-22 Bedford Row, London, WC1R 4JS, UK.
+Jazztel p.l.c. is listed on the Spanish Nuevo Mercado since December 18, 2000. """ ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazztel" ] ;
+    :description "Telecommunications company" ;
+    :name "Jazztel" ;
+    :url "http://www.jazztel.com/" .
+
+<kg:/m/04_18s> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Jasmin St. Claire is an American former pornographic actress. She is also known for her work as a professional wrestling personality, most notably for ECW. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jasmin_St._Claire" ] ;
+    :description "American former pornographic film actor" ;
+    :name "Jasmin St. Claire" .
+
+<kg:/m/09glkyk> a :Thing ;
+    goog:detailedDescription [ :articleBody """A jazz shoe is a type of shoe worn by dancers. They are used in jazz dance and other styles of dance including acro dance, acrobatic rock'n'roll, and hip hop, and in other activities, such as aerobics.
+""" ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Jazz_shoe" ] ;
+    :name "Jazz shoe" .
+
+<kg:/m/0d9xq> a :Person,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "Ella Jane Fitzgerald was an American jazz singer, sometimes referred to as the \"First Lady of Song\", \"Queen of Jazz\", and \"Lady Ella\". " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Ella_Fitzgerald" ] ;
+    :description "American jazz singer" ;
+    :name "Ella Fitzgerald" ;
+    :url "http://www.ellafitzgerald.com/" .
+
+<kg:/m/0jmhr> a :Organization,
+        :SportsTeam,
+        :Thing ;
+    goog:detailedDescription [ :articleBody "The Utah Jazz are an American professional basketball team based in Salt Lake City. The Jazz compete in the National Basketball Association as a member of the league's Western Conference, Northwest Division. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Utah_Jazz" ] ;
+    :description "Basketball team" ;
+    :name "Utah Jazz" ;
+    :url "http://www.nba.com/jazz/" .
+
+[] a :ItemList ;
+    :itemListElement [ a goog:EntitySearchResult ;
+            goog:resultScore 6.197041e+02 ;
+            :result <kg:/m/010fwz69> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 3.425771e+02 ;
+            :result <kg:/m/0d9xq> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.604753e+03 ;
+            :result <kg:/m/02phqpy> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 9.055891e+02 ;
+            :result <kg:/m/09glkyk> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 4.989892e+02 ;
+            :result <kg:/g/11fkqbxmwv> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 2.063269e+03 ;
+            :result <kg:/m/01vw20h> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 4.092773e+02 ;
+            :result <kg:/m/04_18s> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 6.370218e+03 ;
+            :result <kg:/m/0jmhr> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 4.337624e+02 ;
+            :result <kg:/m/0147dk> ],
+        [ a goog:EntitySearchResult ;
+            goog:resultScore 1.216314e+03 ;
+            :result <kg:/m/01vsdgg> ] .
+
