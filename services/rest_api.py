@@ -298,5 +298,23 @@ def search(topic):
         resp = jsonify({'message': 'Login first'})
         resp.status_code = 400
         return resp
-    # add search call
-    pass
+    if topic:
+        import urllib
+
+        querry = topic
+        
+        service_url = 'http://34.242.40.157:5001/'
+        params = {
+            'querry': querry,
+            'limit': 10,
+        }
+        url = service_url + '?' + urllib.parse.urlencode(params)
+        result = urllib.request.urlopen(url).read().decode("utf-8")
+        
+        
+        resp = jsonify(result)
+        resp.status_code = 200
+        return resp
+    resp = jsonify({'message': 'Incorrect params'})
+    resp.status_code = 400
+    return resp

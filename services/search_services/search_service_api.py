@@ -57,7 +57,7 @@ def get_query():
             f.write(rdf_content)
         
         return render_template('search_result.xhtml', svg=Markup(svg_content))
-    render_template('search.html', name=current_user.name)
+    return render_template('search.html', name=current_user.name)
 
 
 @searchModule.route('/download', methods=['POST'])
