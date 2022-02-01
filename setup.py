@@ -28,6 +28,12 @@ def create_app():
     from services.authenticationService import auth as auth_blueprint
     application.register_blueprint(auth_blueprint)
 
+    from services.search_services.search_service_api import searchModule as search_blueprint
+    application.register_blueprint(search_blueprint)
+    
+    from services.visualization_service.vizualization_service import vizualization as vizualization_blueprint
+    application.register_blueprint(vizualization_blueprint)
+
     from services.requestSerivce import main as main_blueprint
     application.register_blueprint(main_blueprint)
 

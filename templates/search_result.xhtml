@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style type="text/css">
+    #graph{
+        height: 100%;
+        width: 100%;
+        border:1px dotted #ccc;
+        background-color: #ccc;
+    }
+    #wrapper{
+        border:2px black solid;
+        padding:0 1em;
+        overflow-x:scroll;
+        overflow-y:scroll;
+        height: 700px;
+        width: 600px;
+    }
+</style>
+
+
+<section class="vh-100 bg-dark">
+    <div class="mask d-flex align-items-center h-100">
+        <div class="container h-100">
+            <div class="row d-flex justify-content-center align-items-start h-100">
+                <div vocab="http://schema.org/">
+                    <div>
+                        <p property="PronounceableText" class="text-white"> The search was succesfully executed</p>
+                        <div>
+                            <p property="PronounceableText" class="text-white"> {{summary}}</p>
+                        </div>
+                    </div>
+                    <div id="wrapper" >
+                        <svg
+                            viewBox="0 0 1700 2000"
+                            overflow="auto"
+                            xmlns:svg="http://www.w3.org/2000/svg"
+                            xmlns="http://www.w3.org/2000/svg"
+                            version="1.0"
+                            id="svg_main" style="height: 100%;width: 100%">
+                                {{svg}}
+                        </svg>    
+                    </div> 
+                    <form method="POST" action="/download">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Downlad format</label>
+                            <select name ="download_format" class="form-control" id="exampleFormControlSelect1">
+                              <option>json-ld</option>
+                              <option>xml</option>
+                              <option>ttl</option>
+                              <option>n3</option>
+                              <option>svg</option>
+                            </select>
+                          </div>
+                        <div class="input-group">
+                            <button type="submit" class="btn btn-light">Download</button>
+                        </div>
+                    </form>   
+                </div>
+               
+                
+            </div>
+            
+        </div>
+       
+</section>
+<section>
+   
+</section>
+{% endblock %}

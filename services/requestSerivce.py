@@ -90,7 +90,7 @@ def update():
 
     return redirect(url_for('main.profile'))
 
-
+"""
 @main.route('/search')
 @login_required
 def search():
@@ -103,7 +103,7 @@ def get_query():
     # main page for query big data
     query = request.form.get('query')
     return render_template('search.html', name=current_user.name, query=query)
-
+"""
 
 @main.route('/recommendations')
 @login_required

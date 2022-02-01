@@ -1,3 +1,3 @@
 from setup import myapp
 
-application= myapp
+application = myapp
