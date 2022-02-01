@@ -16,19 +16,25 @@ def get_query():
     if request.form.get('query'):
         querry = request.form.get('query')
         
-        service_url = 'http://192.168.223.128:5003/'
+        service_url = 'http://192.168.223.128:5001/'
         params = {
             'querry': querry,
             'limit': 10,
         }
         url = service_url + '?' + urllib.parse.urlencode(params)
-        result = urllib.request.urlopen(url).read()
+        result = urllib.request.urlopen(url).read().decode("utf-8")
         
-        
+        service_url = 'http://192.168.223.128:5003/'
+        params = {
+                'rdf_content': result,
+        }
 
+        url = service_url + '?' + urllib.parse.urlencode(params)
+        data_as_ttl = urllib.request.urlopen(url).read().decode("utf-8")
+        #print(data_as_ttl)
         service_url = 'http://192.168.223.128:5002/'
         params = {
-            'rdf_content': result,
+            'rdf_content': data_as_ttl,
         }
 
         url = service_url + '?' + urllib.parse.urlencode(params)

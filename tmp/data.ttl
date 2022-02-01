@@ -2,110 +2,119 @@
 @prefix goog: <http://schema.googleapis.com/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<kg:/g/11f31y1vgj> a :Person,
+<kg:/g/11cnt6t04z> a :CreativeWork,
+        :MovieSeries,
         :Thing ;
-    :description "Singer" ;
-    :name "Debora" .
+    :description "Film series" ;
+    :name "Godzilla" .
 
-<kg:/g/1s05qpyrc> a :Thing ;
-    :description "Song by T. Rex" ;
-    :name "Debora" .
-
-<kg:/m/01270ls9> a :CreativeWork,
-        :Movie,
-        :Thing ;
-    goog:detailedDescription [ :articleBody "The Taking of Deborah Logan is a 2014 American found footage supernatural horror film, which serves as the feature film directorial debut of Adam Robitel, who co-wrote the screenplay and edited the film with Gavin Heffernan. " ;
+<kg:/m/0210p1> a :Thing ;
+    goog:detailedDescription [ :articleBody "A godparent, in paedo-baptist denominations of Christianity, is someone who bears witness to a child's christening and later is willing to help in their catechesis, as well as their lifelong spiritual formation. " ;
             :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
-            :url "https://en.wikipedia.org/wiki/The_Taking_of_Deborah_Logan" ] ;
-    :description "2014 film" ;
-    :name "The Taking of Deborah Logan" .
+            :url "https://en.wikipedia.org/wiki/Godparent" ] ;
+    :name "Godparent" .
 
-<kg:/m/01rqjhg> a :Person,
+<kg:/m/02qwg> a :Person,
         :Thing ;
-    goog:detailedDescription [ :articleBody """Sabrina Debora Salerno, known by her stage name Sabrina, is an Italian singer, songwriter, record producer, model, actress and television presenter.
+    goog:detailedDescription [ :articleBody "Eric Patrick Clapton CBE is an English rock and blues guitarist, singer, and songwriter, widely regarded as one of the most important and influential guitarists of all time. " ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Eric_Clapton" ] ;
+    :description "English guitarist" ;
+    :name "Eric Clapton" ;
+    :url "http://www.ericclapton.com/" .
+
+<kg:/m/03bpv> a :Thing ;
+    goog:detailedDescription [ :articleBody """A goddess is a female deity.
+In many known cultures, goddesses are often linked with literal or metaphorical pregnancy or imagined feminine roles associated with how women and girls are perceived or expected to behave. """ ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/Goddess" ] ;
+    :name "Goddess" .
+
+<kg:/m/03zjn4> a :Corporation,
+        :Organization,
+        :Thing ;
+    goog:detailedDescription [ :articleBody """GoDaddy Inc. is an American publicly traded Internet domain registrar and web hosting company headquartered in Tempe, Arizona and incorporated in Delaware.
+As of December 2021, GoDaddy has more than 20 million customers and over 9,000 employees worldwide. The company is known for its advertising on TV and in the newspapers. """ ;
+            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
+            :url "https://en.wikipedia.org/wiki/GoDaddy" ] ;
+    :description "Company" ;
+    :name "GoDaddy" ;
+    :url "http://www.godaddy.com/" .
+
+<kg:/m/051j2j> a :Corporation,
+        :Organization,
+        :Thing ;
+    goog:detailedDescription [ :articleBody """Godiva Chocolatier is a Belgian chocolate maker which is jointly owned by Turkish conglomerate Yıldız Holding and South Korean equity company MBK Partners.
 """ ;
             :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
-            :url "https://en.wikipedia.org/wiki/Sabrina_Salerno" ] ;
-    :description "Italian singer" ;
-    :name "Sabrina Salerno" ;
-    :url "http://www.sabrinasalerno.com/" .
+            :url "https://en.wikipedia.org/wiki/Godiva_Chocolatier" ] ;
+    :description "Company" ;
+    :name "Godiva Chocolatier" ;
+    :url "http://www.godiva.be" .
 
-<kg:/m/023j6t> a :Person,
+<kg:/m/069nv4> a :Person,
         :Thing ;
-    goog:detailedDescription [ :articleBody "According to the Book of Judges, Deborah was a prophetess of the God of the Israelites, the fourth Judge of pre-monarchic Israel and the only female judge mentioned in the Bible. " ;
+    goog:detailedDescription [ :articleBody "Pawan Kalyan is an Indian actor, director, screenwriter, stunt coordinator, philanthropist, and politician. His films are predominantly in Telugu cinema. " ;
             :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
-            :url "https://en.wikipedia.org/wiki/Deborah" ] ;
-    :description "Prophetess" ;
-    :name "Deborah" .
+            :url "https://en.wikipedia.org/wiki/Pawan_Kalyan" ] ;
+    :description "Indian actor" ;
+    :name "Pawan Kalyan" .
 
-<kg:/m/02qj61v> a :Person,
+<kg:/m/07g1sm> a :CreativeWork,
+        :Movie,
         :Thing ;
-    goog:detailedDescription [ :articleBody "Debora Caprioglio is an Italian actress. Internationally, she is best known for playing the title character in the 1991 film Paprika by Tinto Brass and a relationship with Klaus Kinski from 1987–1989. " ;
+    goog:detailedDescription [ :articleBody "The Godfather is a 1972 American crime film directed by Francis Ford Coppola, who co-wrote the screenplay with Mario Puzo, based on Puzo's best-selling 1969 novel of the same name. " ;
             :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
-            :url "https://en.wikipedia.org/wiki/Debora_Caprioglio" ] ;
-    :description "Italian actress" ;
-    :name "Debora Caprioglio" .
+            :url "https://en.wikipedia.org/wiki/The_Godfather" ] ;
+    :description "1972 film" ;
+    :name "The Godfather" ;
+    :url "http://www.thegodfather.com" .
 
-<kg:/m/047s_y5> a :Person,
-        :Thing ;
-    goog:detailedDescription [ :articleBody "Deborah Ann Popp, known professionally as Debby Ryan, is an American actress and singer. Ryan started acting in professional theatres at the age of seven, and was later discovered in a nationwide search by Disney Channel. " ;
+<kg:/m/0_6st0j> a :Thing ;
+    goog:detailedDescription [ :articleBody "The Godzilla franchise is a Japanese media franchise created and owned by Toho Co., Ltd, centered on the fictional kaiju character Godzilla. " ;
             :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
-            :url "https://en.wikipedia.org/wiki/Debby_Ryan" ] ;
-    :description "American actress" ;
-    :name "Debby Ryan" ;
-    :url "http://www.debbyryan.com/" .
+            :url "https://en.wikipedia.org/wiki/Godzilla_(franchise)" ] ;
+    :name "Godzilla" .
 
-<kg:/m/06w2yp9> a :Person,
+<kg:/m/0p9lw> a :CreativeWork,
+        :Movie,
         :Thing ;
-    goog:detailedDescription [ :articleBody "Deborah Ann Woll is an American actress and model. Woll played Jessica Hamby in the HBO drama series True Blood, which earned her a nomination for a Screen Actors Guild Award. " ;
+    goog:detailedDescription [ :articleBody "Dogma is a 1999 American fantasy comedy film written and directed by Kevin Smith, who also stars with Ben Affleck, Matt Damon, George Carlin, Linda Fiorentino, Janeane Garofalo, Chris Rock, Jason Lee, Salma Hayek, Bud Cort, Alan Rickman, Alanis Morissette and Jason Mewes. " ;
             :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
-            :url "https://en.wikipedia.org/wiki/Deborah_Ann_Woll" ] ;
-    :description "American actress" ;
-    :name "Deborah Ann Woll" .
-
-<kg:/m/06ztw0j> a :Person,
-        :Thing ;
-    goog:detailedDescription [ :articleBody "Deborah Jeanne Rowe is an American dermatology assistant best known for her marriage to pop musician Michael Jackson, with whom she had two children. She lives in Palmdale, California." ;
-            :license "https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" ;
-            :url "https://en.wikipedia.org/wiki/Debbie_Rowe" ] ;
-    :description "Michael Jackson's ex-wife" ;
-    :name "Debbie Rowe" .
-
-<kg:/m/0f7t25> a :Person,
-        :Thing ;
-    :description "Pornographic film actor" ;
-    :name "Ryan Conner" ;
-    :url "http://www.RyanConnerxxx.com" .
+            :url "https://en.wikipedia.org/wiki/Dogma_(film)" ] ;
+    :description "1999 film" ;
+    :name "Dogma" ;
+    :url "http://www.dogma-movie.com/" .
 
 [] a :ItemList ;
     :itemListElement [ a goog:EntitySearchResult ;
-            goog:resultScore 1.404647e+02 ;
-            :result <kg:/g/11f31y1vgj> ],
+            goog:resultScore 2.327463e+03 ;
+            :result <kg:/m/069nv4> ],
         [ a goog:EntitySearchResult ;
-            goog:resultScore 1.069394e+03 ;
-            :result <kg:/m/06w2yp9> ],
+            goog:resultScore 2.534741e+03 ;
+            :result <kg:/g/11cnt6t04z> ],
         [ a goog:EntitySearchResult ;
-            goog:resultScore 1.489297e+02 ;
-            :result <kg:/g/1s05qpyrc> ],
+            goog:resultScore 1.423362e+03 ;
+            :result <kg:/m/0210p1> ],
         [ a goog:EntitySearchResult ;
-            goog:resultScore 1.479391e+02 ;
-            :result <kg:/m/06ztw0j> ],
+            goog:resultScore 1.768204e+03 ;
+            :result <kg:/m/0p9lw> ],
         [ a goog:EntitySearchResult ;
-            goog:resultScore 4.389297e+02 ;
-            :result <kg:/m/01rqjhg> ],
+            goog:resultScore 1.192261e+03 ;
+            :result <kg:/m/0_6st0j> ],
         [ a goog:EntitySearchResult ;
-            goog:resultScore 2.213259e+02 ;
-            :result <kg:/m/01270ls9> ],
+            goog:resultScore 1.465244e+03 ;
+            :result <kg:/m/051j2j> ],
         [ a goog:EntitySearchResult ;
-            goog:resultScore 2.801287e+02 ;
-            :result <kg:/m/0f7t25> ],
+            goog:resultScore 5.87574e+03 ;
+            :result <kg:/m/03zjn4> ],
         [ a goog:EntitySearchResult ;
-            goog:resultScore 1.983711e+02 ;
-            :result <kg:/m/02qj61v> ],
+            goog:resultScore 1.813167e+03 ;
+            :result <kg:/m/07g1sm> ],
         [ a goog:EntitySearchResult ;
-            goog:resultScore 2.88578e+02 ;
-            :result <kg:/m/047s_y5> ],
+            goog:resultScore 4.750488e+03 ;
+            :result <kg:/m/02qwg> ],
         [ a goog:EntitySearchResult ;
-            goog:resultScore 1.286617e+03 ;
-            :result <kg:/m/023j6t> ] .
+            goog:resultScore 1.843035e+03 ;
+            :result <kg:/m/03bpv> ] .
 
