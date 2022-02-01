@@ -3,14 +3,11 @@ import sys
 
 import numpy as np
 import pandas as pd
-import pyspark
 import urllib
 import json
 
 from SPARQLWrapper import SPARQLWrapper, JSON
 from matplotlib import pyplot as plt
-from pyspark import SparkContext
-from pyspark.sql import SQLContext
 
 #sc = SparkContext.getOrCreate()
 #sql_context = SQLContext(sc)
@@ -155,74 +152,6 @@ def get_spark_df(pd_df: pd.DataFrame) -> pyspark.sql.DataFrame:
 '''
 # -------------------------------------------------------------------------------
 
-
-def get_data_for_plots(spark_df: pyspark.sql.DataFrame,
-                       relevant_columns: list) -> dict:
-    countries = [list(country.asDict().values())[0]
-                 for country in spark_df.select('countryLabel').distinct().take(195)]
-
-    month_year_combos = spark_df.select(relevant_columns) \
-        .distinct().select(["month", "year"]).distinct() \
-        .take(1000000)
-
-    month_year_combos = [tuple(combo.asDict().values())
-                         for combo in month_year_combos]
-
-    group_by_country_df = spark_df.select(relevant_columns) \
-        .distinct() \
-        .rdd.map(lambda row: list(row.asDict().values())) \
-        .map(lambda line: (line[0], tuple(line[1:]))) \
-        .groupByKey()
-
-    groups = dict(group_by_country_df.take(195))
-
-    """
-      For each country, keep only the dates --a.k.a (month, year) tuples-- when
-        each census took place
-    """
-
-    country_month_year_df = group_by_country_df.map(lambda pair:
-                                                    (pair[0], [(triple[1], triple[2])
-                                                               for triple in pair[1]]))
-
-    """
-      Keep only those dates --a.k.a (month, year) tuples-- when censuses took
-        place simultaneously in all of the given countries
-    """
-
-    simultaneous_dates = []
-    for date in month_year_combos:
-        if country_month_year_df.map(lambda pair: date in pair[1]).sum() == len(countries):
-            simultaneous_dates.append(date)
-
-    """
-      Keep only those population statistics where censuses took place simultaneously
-       on the same dates
-    """
-
-    data_to_plot = dict(group_by_country_df.map(lambda pair:
-                                                (pair[0], [triple for triple in pair[1]
-                                                           if (triple[1], triple[2]) in simultaneous_dates]))
-                        .take(1000000))
-
-    """
-      Construct proper datetimes to plot
-    """
-    # population month year -> population year-month(str)
-
-    data_to_plot = dict(list(map(lambda pair: [pair[0],
-                                               [(value[0], str(value[2]) + "-" + str(value[1]))
-                                                for value in pair[1]]],
-                                 data_to_plot.items())))
-
-    """
-      Sort according to the datetimes
-    """
-    for key in data_to_plot.keys():
-        values = data_to_plot[key]
-        data_to_plot[key] = sorted(values, key=lambda pair: pair[1])
-
-    return data_to_plot
 
 
 # -------------------------------------------------------------------------------

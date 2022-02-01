@@ -29,7 +29,6 @@ pycountry==22.1.10
 pygal==3.0.0
 pygal-maps-world==1.0.2
 pyparsing==3.0.7
-pyspark==3.2.1
 python-dateutil==2.8.2
 pytz==2021.3
 rdflib==6.1.1
