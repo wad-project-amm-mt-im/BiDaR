@@ -5,13 +5,13 @@ layout: default
 <!doctype html>
 <html lang="en">
 <head>
-    <title>BiDaR (Big Data Retrival)</title>
+    <title>BiDaR (Big Data Retriever)</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body prefix="schema: http://schema.org">
     <article typeof="schema:ScholarlyArticle" resource="#">
         <header>
-            <h1 property="schema:name"> BiDaR (Big Data Retrival)
+            <h1 property="schema:name"> BiDaR (Big Data Retriever)
             </h1>
         </header>
         <div role="contentinfo">
@@ -122,13 +122,14 @@ layout: default
             <h3 id="micro">Microservices</h3>
 	    <blockquote>
         <p>	
-		Our application will have four microservices Data Retriver, Visualisation Service, Spark Service and Authentication Serviced which are controlled by the main orchestrator service named Request Processor.
+		Our application will have four microservices Data Retrieverr, Visualisation Service, Spark Service and Authentication Serviced which are controlled by the main orchestrator service named Request Processor.
 		The main flow of our architecture can be seen in the diagram below:
 		<figure typeof="sa:Image1">
                     <img class="imagine" style="height:auto;" src="./Diagrams/architecture_diagram.png">
         </figure>
-        <b>Request Processor Service</b> this is the main service that process user actions like updateing profile info, adding or deleting topic of interest, visaulisez statistics or search a topic. Also, this service process the data received from data retriver service, like export, vizualize or compare. <br> <br>
-        <b>Data Retriver Service</b>  construct all sparql queries for each endpoint and  handle the data requested from sparql endpoints. This parse the rdf triples and send to the request processor service to show on pages. Main data source for our application is WikiData.<br> <br>  
+        <b>Request Processor Service</b> this is the main service that process user actions like updateing profile info, adding or deleting topic of interest, visaulisez statistics or search a topic. Also, this service process the data received from data retriever
+        service, like export, vizualize or compare. <br> <br>
+        <b>Data Retriever Service</b>  construct all sparql queries for each endpoint and  handle the data requested from sparql endpoints. This parse the rdf triples and send to the request processor service to show on pages. Main data source for our application is WikiData.<br> <br>  
 		<b>Authentication Service</b> this service will be called when an user try to log in or register. Is used a token to ensure user indentity and make our website secure. On the server, token and session manage user information via a secret key, which are securely stored on the client. <br> <br>
 		<b>Visualisation Service</b> create all visualisation for statistics, these are stackplots, linesplots, pieplots, svg images, plotly charts, dataframes tables or Word Cloud Visualisation.<br> <br>
 		<b>Spark Service</b> was created for demographics functionality because the date is manipulated by spark dataframes and for our application to work independent and modular, all spark apache functionalities was included in this service.

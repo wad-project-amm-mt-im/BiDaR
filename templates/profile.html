@@ -44,9 +44,9 @@
                                             <label for="input5">Gender</label>
                                             <select class="form-control form-control-lg" id="input5" name="gender">
                                                 <option selected value={{gender}}>{{gender}}</option>
-                                                {% if gender == "Female" %}
+                                                {% if gender == "Female" or gender == "female" %}
                                                 <option value="Male">Male</option>
-                                                {% else %}
+                                                {% elif gender == "Male" or gender == "male" %}
                                                 <option value="Female">Female</option>
                                                 {% endif %}
                                             </select>
