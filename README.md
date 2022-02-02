@@ -11,6 +11,8 @@ See user guide [here](https://github.com/wad-project-amm-mt-im/BiDaR/blob/main/d
 
 Visit BiDaR website [here](http://bidar-env.eba-9ppmprqt.eu-west-1.elasticbeanstalk.com/).
 
+See demo [here](https://youtu.be/X42Dmcs88YM).
+
 # Project progress
 - 01 Nov 2021 - Project Start.
 - 08 Nov 2021 - Research for technologies.
